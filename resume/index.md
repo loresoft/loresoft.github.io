@@ -1,3 +1,8 @@
+---
+layout: page
+title: Resume of Paul Welter
+---
+
 **Paul Welter**   
 [pwelter@loresoft.com](mailto:pwelter@loresoft.com)
 

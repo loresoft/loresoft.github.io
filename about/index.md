@@ -1,14 +1,21 @@
 ---
 layout: page
-title: About
+title: Paul Welter
 ---
 
-Some information about you!
+![Paul Welter](https://en.gravatar.com/userimage/3228356/e887c41bb637b58f1b79ed52116182b6.png?size=200)   
+**Paul Welter**  
+*pwelter34*
 
-### More Information
+### Projects
 
-A place to include any other types of information that you'd like to include about yourself. 
+- [EntityFramework.Extended](https://github.com/loresoft/EntityFramework.Extended)  
+- [MSBuild Community Tasks](https://github.com/loresoft/msbuildtasks)
+- [KickStart](https://github.com/loresoft/KickStart)
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[pwelter@loresoft.com](mailto:pwelter@loresoft.com)
+
+### Resume
+- [Resume of Paul Welter]({{ site.baseurl }}resume)
