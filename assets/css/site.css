@@ -1,0 +1,37 @@
+body {
+  padding-top: 70px;
+}
+
+footer, #footer {
+  color: #999;
+  text-align: center;
+  line-height: normal;
+  margin: 0 0 1em 0;
+  font-size: .9em;
+}
+
+.post-date {
+  display: block;
+  margin-top: -.5rem;
+  margin-bottom: 1rem;
+  color: #9a9a9a;
+}
+
+.related-posts {
+  list-style: none;
+}
+.related-posts h3 {
+  font-size: 1.2em;
+  margin-top: 0;
+}
+.related-posts li small {
+  font-size: 75%;
+  color: #999;
+}
+.related-posts li a:hover {
+  color: #268bd2;
+  text-decoration: none;
+}
+.related-posts li a:hover small {
+  color: inherit;
+}

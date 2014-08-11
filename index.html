@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<div class="posts">
+  {% for post in paginator.posts %}
+  <div class="post">
+    <h1 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
+    <span class="post-date">{{ post.date | date: "%B %e, %Y" }}</span>
+    {{ post.content }}
+  </div>
+  <hr />
+  {% endfor %}
+</div>
+
+<ul class="pager">
+  {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+    <li class="first"><a class="pull-left" href="{{ site.baseurl }}">&larr; Newer</a></li>
+    {% else %}
+    <li class="first"><a class="pull-left" href="{{ site.baseurl }}page{{ paginator.previous_page }}">&larr; Newer</a></li>
+    {% endif %}
+  {% endif %}
+  {% if paginator.next_page %}
+    <li class="last"><a class="pull-right" href="{{ site.baseurl }}page{{ paginator.next_page }}">Older &rarr;</a></li>
+  {% endif %}
+</ul>

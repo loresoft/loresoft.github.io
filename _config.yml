@@ -1,0 +1,27 @@
+
+markdown: redcarpet
+highlighter: pygments
+permalink: /:title
+paginate: 5
+
+baseurl: '/'
+url: http://loresoft.github.io
+
+name: LoreSoft.com
+author: Paul Welter
+description: The collective work of Paul Welter
+
+disqus: 'loresoft'
+analytics: 'UA-575771-2'
+
+# Use the following plug-ins
+gems:
+  - jemoji
+  - jekyll-sitemap
+
+# Exclude these files from your production _site
+exclude:
+    - Gemfile
+    - Gemfile.lock
+    - LICENSE
+    - README.md
