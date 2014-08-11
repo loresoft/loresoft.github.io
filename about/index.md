@@ -4,8 +4,7 @@ title: Paul Welter
 ---
 
 ![Paul Welter](https://en.gravatar.com/userimage/3228356/e887c41bb637b58f1b79ed52116182b6.png?size=200)   
-**Paul Welter**  
-*pwelter34*
+*pwelter34*   
 
 ### Projects
 
@@ -13,7 +12,7 @@ title: Paul Welter
 - [MSBuild Community Tasks](https://github.com/loresoft/msbuildtasks)
 - [KickStart](https://github.com/loresoft/KickStart)
 
-### Contact me
+### Contact
 
 [pwelter@loresoft.com](mailto:pwelter@loresoft.com)
 
