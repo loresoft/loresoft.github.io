@@ -29,7 +29,7 @@ result = eval.Evaluate("x * 10");
 
 Calculator that evaluates math expressions. 
 
-![Calculator.NET](http://farm4.static.flickr.com/3120/2388284012_7af197ce95.jpg?v=0)
+![Calculator.NET](http://www.loresoft.com/assets/Calculator.png)
 
 **Calculator.NET Features**
 
@@ -46,8 +46,4 @@ Calculator that evaluates math expressions.
 
 **Download**
 
-File: [Calculator.msi](http://www.loresoft.com/files/uploads/Calculator.msi)    
-Size: 1,357,824 kB
-
-File: [Calculator.v1.0.0.12.zip](http://www.loresoft.com/files/uploads/Calculator.v1.0.0.12.zip)    
-Size: 614,015 kB
+[https://github.com/loresoft/Calculator/releases](https://github.com/loresoft/Calculator/releases "Calculator Releases")
