@@ -23,8 +23,8 @@ To install KickStart, run the following command in the Package Manager Console
 
     PM> Install-Package KickStart
     
-More information about NuGet package avaliable at
-<https://nuget.org/packages/KickStart>
+* NuGet: [http://www.nuget.org/packages?q=KickStart](http://www.nuget.org/packages?q=KickStart "NuGet Package")
+* Source: [http://github.com/loresoft/KickStart](https://github.com/loresoft/KickStart "Project Source")
 
 ## Example
 
@@ -42,8 +42,10 @@ This example will scan the assembly containing UserModule.  Then it will find al
 - StartupTask - Run any class that implements `IStartupTask`
 - Autofac - Registers all Autofac `Module` classes and creates the container
 - AutoMapper - Registers all AutoMapper `Profile` classes
-- MongoDB - Registers all `BsonClassMap` classes with MongoDB serialization.
-- Ninject - Registers all `NinjectModule` classes and creates an `IKernal`.
+- log4net - Use log4net as a logger
+- MongoDB - Registers all `BsonClassMap` classes with MongoDB serialization
+- Ninject - Registers all `NinjectModule` classes and creates an `IKernal`
+- NLog - Use NLog as a logger
 - SimpleInjector - Run all `ISimpleInjectorRegistration` instances allowing container registration
 - Unity - Run all `IUnityRegistration` instances allowing container registration
 
@@ -126,3 +128,34 @@ To install Unity extension, run the following command in the Package Manager Con
 
     PM> Install-Package KickStart.Unity
 
+### NLog
+
+Use NLog as a logger for KickStart
+
+Basic usage
+
+    Kick.Start(c => c
+        .IncludeAssemblyFor<Project>()
+        .UseNLog()
+        .UseStartupTask()
+    );
+
+Configure NLog to use ConsoleTarget
+
+    Kick.Start(c => c
+        .IncludeAssemblyFor<Project>()
+        .UseNLog(config =>
+        {
+            var consoleTarget = new ConsoleTarget();
+            consoleTarget.Layout = "${time} ${level:uppercase=true:padding=1:fixedLength=true} ${logger:shortName=true} ${message} ${exception:format=tostring}";        
+            config.AddTarget("console", consoleTarget);
+
+            var consoleRule = new LoggingRule("*", NLog.LogLevel.Trace, consoleTarget);
+            config.LoggingRules.Add(consoleRule);
+        })
+        .UseStartupTask()
+    );
+
+To install NLog extension, run the following command in the Package Manager Console
+
+    PM> Install-Package KickStart.NLog
