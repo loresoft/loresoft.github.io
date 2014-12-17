@@ -1,7 +1,7 @@
 ---
 layout: post
 dateCreated: 12/17/2014 12:00:00 PM
-title: KickStart - Application Initiation Framework
+title: KickStart - Application Initialization Framework
 tags:
 - KickStart
 ---
