@@ -6,8 +6,6 @@ tags:
 - KickStart
 ---
 
-## KickStart - Application Initiation Framework
-
 Application start-up helper to initialize things like an IoC container, register mapping information or run a task.
 
 ## Features
