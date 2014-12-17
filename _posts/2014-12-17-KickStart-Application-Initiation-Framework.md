@@ -147,7 +147,7 @@ Configure NLog to use ConsoleTarget
         .UseNLog(config =>
         {
             var consoleTarget = new ConsoleTarget();
-            consoleTarget.Layout = "${time} ${level:uppercase=true:padding=1:fixedLength=true} ${logger:shortName=true} ${message} ${exception:format=tostring}";        
+            consoleTarget.Layout = "${time} ${level:padding=1:fixedLength=true} ${logger:shortName=true} ${message} ${exception:format=tostring}";        
             config.AddTarget("console", consoleTarget);
 
             var consoleRule = new LoggingRule("*", NLog.LogLevel.Trace, consoleTarget);
