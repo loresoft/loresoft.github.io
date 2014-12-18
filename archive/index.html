@@ -15,6 +15,6 @@ title: Archive
             <ul>
         {% endif %}
     {% endunless %}
-    <li><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }} <small>{{ post.date | date: "%B %e, %Y" }}</small></a></li>
+    <li><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> - <small>{{ post.date | date: "%B %e, %Y" }}</small></li>
 {% endfor %}
 </ul>
