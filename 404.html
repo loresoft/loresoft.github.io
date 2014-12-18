@@ -7,17 +7,19 @@ title: 404 - Page not found
 Sorry, we can't find that page that you're looking for. You can try take for a look by going <a href="{{ site.baseurl }}/" title="Home Page">back to the homepage</a>.
 </p>
 
-<h2>Archives</h2>
-{% for post in site.posts %}
-{% unless post.next %}
-<h4>{{ post.date | date: '%Y' }}</h4>
-{% else %}
-  {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-  {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
-  {% if year != nyear %}
-<h4>{{ post.date | date: '%Y' }}</h4>
-  {% endif %}
-{% endunless %}
-<div><a href="{{ post.url }}">{{ post.title }}</a></div>
+{%for post in site.posts %}
+    {% unless post.next %}
+        <h4>{{ post.date | date: '%Y' }}</h4>
+        <ul>
+    {% else %}
+        {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+        {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+        {% if year != nyear %}
+            </ul>
+            <h4>{{ post.date | date: '%Y' }}</h4>
+            <ul>
+        {% endif %}
+    {% endunless %}
+    <li><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }} <small>{{ post.date | date: "%B %e, %Y" }}</small></a></li>
 {% endfor %}
-
+</ul>
