@@ -1,0 +1,301 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Pump Discharge Pressure</title>
+    <meta name="viewport" content="user-scalable=no, width=device-width" />
+    <style type="text/css">
+        body
+        {
+            background-color: #ddd;
+            color: #222;
+            font-family: Helvetica;
+            font-size: 14px;
+            margin: 0;
+            padding: 0;
+        }
+        #header h1
+        {
+            margin: 0;
+            padding: 0;
+        }
+        #header h1 a
+        {
+            background-color: #ccc;
+            border-bottom: 1px solid #666;
+            color: #222;
+            display: block;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px 0;
+            text-align: center;
+            text-decoration: none;
+            background-image: -webkit-gradient(linear, left top, left bottom, from(#ccc), to(#999));
+        }
+        
+        #content
+        {
+            padding: 10px;
+        }
+        
+        .numberField
+        {
+            width: 50px;
+        }
+        .result
+        {
+            font-family: 'Courier New';
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>
+                <a href="#">Pump Discharge Presure</a></h1>
+        </div>
+        <div id="content">
+            <p>
+                PDP = NP + FL + AFL +/- EL</p>
+            <form id="frictionLossForm" action="pdp.html">
+            <fieldset>
+                <legend>Nozzle Pressure (NP)</legend>
+                <table>
+                    <tr>
+                        <td style="padding-right: 10px;">
+                            Fog Nozzle
+                        </td>
+                        <td>
+                            100 psi
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-right: 10px;">
+                            Smooth Bore Handline
+                        </td>
+                        <td>
+                            50 psi
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-right: 10px;">
+                            Smooth Bore Master
+                        </td>
+                        <td>
+                            80 psi
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <br />
+            <fieldset>
+                <legend>Single Hose Friction Loss (FL)</legend>Hose:
+                <select id="frictionSizeCoefficient" name="frictionSizeCoefficient">
+                    <option value="1100">¾</option>
+                    <option value="150">1</option>
+                    <option value="80">1¼</option>
+                    <option value="24">1½</option>
+                    <option value="15.5" selected="selected">1¾</option>
+                    <option value="2">2½</option>
+                    <option value="0.68">3</option>
+                    <option value="0.34">3½</option>
+                    <option value="0.2">4</option>
+                    <option value="0.1">4½</option>
+                    <option value="0.08">5</option>
+                    <option value="0.05">6</option>
+                </select><br />
+                GPM:
+                <input id="frictionGpm" name="frictionGpm" type="number" value="100" class="numberField" /><br />
+                Length:
+                <input id="frictionHoseLength" name="frictionHoseLength" type="number" value="100" class="numberField" /><br />
+                <br />
+                <span id="frictionLoss" class="result"></span>
+                <br />
+                <input id="frictionCalculateLoss" type="submit" value="Calculate" /><br />
+            </fieldset>
+            </form>
+            <br />
+            <form id="smoothBoreForm" action="pdp.html">
+            <fieldset>
+                <legend>Smooth Bore Nozzle Flow (GPM)</legend>
+                Nozzle Tip:
+                <select id="smoothBoreNozzleTip" name="smoothBoreNozzleTip">
+                    <option value="0.75">¾</option>
+                    <option value="0.875" selected="selected">⅞</option>
+                    <option value="0.9375">15/16</option>
+                    <option value="1">1</option>
+                    <option value="1.125">1⅛</option>
+                    <option value="1.25">1¼</option>
+                    <option value="1.375">1⅜</option>
+                    <option value="1.5">1½</option>
+                    <option value="1.75">1¾</option>
+                    <option value="2">2</option>
+                </select><br />
+                Application:
+                <select id="smoothBoreApplication" name="smoothBoreApplication">
+                    <option selected="selected" value="50">Handline</option>
+                    <option value="80">Master Stream</option>
+                </select><br />
+                <br />
+                <span id="smoothBoreGpm" class="result"></span>
+                <br />
+                <input id="smoothBoreCalculateGpm" type="submit" value="Calculate" /><br />
+            </fieldset>
+            </form>
+            <br />
+            <form id="elevationFrictionLossForm" action="pdp.html">
+            <fieldset>
+                <legend>Elevation Friction Loss (EL)</legend>Mode:
+                <select id="elevationMode" name="elevationMode">
+                    <option value="5" selected="selected">By Floor</option>
+                    <option value="0.5">By Foot</option>
+                </select><br />
+                Number:
+                <input id="elevationNumber" name="elevationNumber" type="number" value="10" class="numberField" /><br />
+                <br />
+                <span id="elevationFrictionLoss" class="result"></span>
+                <br />
+                <input id="elevationLossCalculate" type="submit" value="Calculate" /><br />
+            </fieldset>
+            </form>
+            <br />
+            <fieldset>
+                <legend>Appliance Friction Loss (AFL)</legend>
+                <table>
+                    <tr>
+                        <td style="padding-right: 10px;">
+                            2½ to 1½ wye
+                        </td>
+                        <td>
+                            10 psi (over 350 gpm)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-right: 10px;">
+                            Portable Master
+                        </td>
+                        <td>
+                            15 psi
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-right: 10px;">
+                            Four-way Thief
+                        </td>
+                        <td>
+                            15 psi
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-right: 10px;">
+                            Standpipe
+                        </td>
+                        <td>
+                            25 psi
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </div>
+    </div>
+    <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript">
+        // Numeric only control handler
+        jQuery.fn.ForceNumericOnly = function () {
+            return this.each(function () {
+                $(this).keydown(function (e) {
+                    var key = e.charCode || e.keyCode || 0;
+                    // allow backspace, tab, delete, arrows, numbers and keypad numbers ONLY
+                    return (
+                        key == 8 || key == 9 || key == 13 || key == 46 ||
+                        (key >= 37 && key <= 40) ||
+                        (key >= 48 && key <= 57) ||
+                        (key >= 96 && key <= 105));
+                })
+            })
+        };
+
+        $(document).ready(function () {
+            //$(".numberField").ForceNumericOnly();
+
+            $("#frictionLossForm").submit(function () {
+                var hs = $("#frictionSizeCoefficient").val();
+                var hl = $("#frictionHoseLength").val();
+                var gpm = $("#frictionGpm").val();
+
+                // FL = C * Q^2 * L
+                var C = parseFloat(hs);
+                var L = parseInt(hl) / 100;
+                var Q = parseInt(gpm) / 100;
+
+                var FL = C * Math.pow(Q, 2) * L;
+                var m = 'FL = C * Q² * L<br />';
+                m += String.format('FL = {0} * {1}² * {2}<br />', C, Q, L);
+                m += String.format('FL = {0}<br />', FL);
+
+                $('#frictionLoss').html(m);
+                return false;
+            });
+
+            $("#smoothBoreForm").submit(function () {
+                var nt = $("#smoothBoreNozzleTip").val();
+                var ap = $("#smoothBoreApplication").val();
+
+                // GPM = 29.7 * d^2 * √NP
+                var d = parseFloat(nt);
+                var NP = parseInt(ap);
+
+                var x = Math.round(Math.pow(d, 2) * 100) / 100;
+                var y = Math.round(Math.sqrt(NP) * 100) / 100;
+
+                var GPM = 29.7 * x * y;
+
+                var m = 'GPM = 29.7 * d² * √NP<br />';
+                m += String.format('GPM = 29.7 * {0}² * √{1}<br />', d, NP);
+                m += String.format('GPM = {0}<br />', GPM);
+
+                $('#smoothBoreGpm').html(m);
+                return false;
+            });
+
+
+            $("#elevationFrictionLossForm").submit(function () {
+                var m = $("#elevationMode").val();
+                var n = $("#elevationNumber").val();
+
+                var x = parseFloat(m);
+                var y = parseInt(n);
+
+                var EL = x * y;
+
+                var m = (m === '5')
+                    ? 'EL = Floor * 5<br />'
+                    : 'EL = Feet * 0.5<br />';
+
+                m += String.format('EL = {0} * {1}<br />', y, x);
+                m += String.format('EL = {0}<br />', EL);
+
+                $('#elevationFrictionLoss').html(m);
+                return false;
+            });
+        });
+
+        String.format = function () {
+            var s = arguments[0];
+            for (var i = 0; i < arguments.length - 1; i++) {
+                var reg = new RegExp("\\{" + i + "\\}", "gm");
+                s = s.replace(reg, arguments[i + 1]);
+            }
+
+            return s;
+        }
+
+        String.prototype.endsWith = function (suffix) {
+            return (this.substr(this.length - suffix.length) === suffix);
+        }
+
+        String.prototype.startsWith = function (prefix) {
+            return (this.substr(0, prefix.length) === prefix);
+        }
+    </script>
+</body>
+</html>
