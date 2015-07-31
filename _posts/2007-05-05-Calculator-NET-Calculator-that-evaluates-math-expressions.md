@@ -4,6 +4,9 @@ dateCreated: 5/5/2007 4:38:00 PM
 title: Calculator.NET - Calculator that evaluates math expressions
 tags:
 - Calculator
+redirect_from:
+- "/Applications/Calculator/index.html"
+- "/Applications/Calculator/Download/default.aspx/index.html"
 ---
 
 I'd like to announce the release of a little project I've been working on.  I call it Calculator.NET.  I started this project for a couple reasons.  First, I was annoyed that Windows Vista doesn't come with a better calculator.  Windows XP has Power Calculator, but that doesn't work on Vista.  Next, I was reading a blog about [DynCalc](http://community.bartdesmet.net/blogs/bart/archive/2006/10/11/4513.aspx) by [Bart De Smet](http://community.bartdesmet.net/blogs/bart/default.aspx) on how to do mathematical calculations. That gave me the starting point on how to create Calculator.NET.

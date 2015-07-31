@@ -4,6 +4,8 @@ dateCreated: 2/24/2004 11:42:00 PM
 title: How to create a custom dictionary
 tags:
 - Projects > NetSpell
+redirect_from:
+- "/projects/netspell/how-to-create-a-custom-dictionary/default.aspx/index.html"
 ---
 
 The following are some simple steps to create a custom dictionary.

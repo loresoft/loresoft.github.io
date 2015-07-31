@@ -4,6 +4,12 @@ dateCreated: 10/20/2003 12:40:00 AM
 title: The NetSpell project
 tags:
 - Projects > NetSpell
+redirect_from:
+- "/NetSpell/index.html"
+- "/Applications/NetSpell/index.html"
+- "/Applications/NetSpell/Download/default.aspx/index.html"
+- "/projects/netspell/default.aspx/index.html"
+- "/projects/netspell/the-netspell-project/default.aspx/index.html"
 ---
 
 ### Introduction
