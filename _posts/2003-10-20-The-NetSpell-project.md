@@ -7,6 +7,7 @@ tags:
 redirect_from:
 - "/NetSpell/index.html"
 - "/Applications/NetSpell/index.html"
+- "/Applications/NetSpell/default.aspx/index.html"
 - "/Applications/NetSpell/Download/default.aspx/index.html"
 - "/projects/netspell/default.aspx/index.html"
 - "/projects/netspell/the-netspell-project/default.aspx/index.html"

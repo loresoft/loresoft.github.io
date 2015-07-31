@@ -6,6 +6,7 @@ tags:
 - Calculator
 redirect_from:
 - "/Applications/Calculator/index.html"
+- "/Applications/Calculator/default.aspx/index.html"
 - "/Applications/Calculator/Download/default.aspx/index.html"
 ---
 
