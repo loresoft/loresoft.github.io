@@ -62,7 +62,7 @@ var result = await client.GetAsync<Repository>(b => b
 );
 ```
 
-# Fake Response
+## Fake Response
 
 FluentRest has the ability to fake a HTTP responses by loading the response from disk.  You can first capture the response, then use it for unit tests.
 
