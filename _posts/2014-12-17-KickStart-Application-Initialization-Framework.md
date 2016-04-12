@@ -53,7 +53,7 @@ Kick.Start(config => config
 
 ### StartupTask
 
-The StartupTask extension allows running code on application start-up. To use this extension, implement the `IStartupTask` interface. Use the Priority property to control the order of execution.
+The StartupTask extension allows running code on application start-up. To use this extension, implement the `IStartupTask` interface. Use the `Priority` property to control the order of execution.
 
 
 Basic usage

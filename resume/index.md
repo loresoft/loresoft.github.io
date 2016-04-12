@@ -4,7 +4,7 @@ title: Resume of Paul Welter
 ---
 
 **Paul Welter**   
-[www.loresoft.com](http://www.loresoft.com/)
+[www.loresoft.com](http://www.loresoft.com/)   
 [pwelter@loresoft.com](mailto:pwelter@loresoft.com)
 
 ## Summary of Qualifications
@@ -18,15 +18,13 @@ title: Resume of Paul Welter
 
 ## Professional Experience
 
-**Enterprise Architect** *Novus Media Inc.* 2011 – Present   
+**Senior Software Engineer** *Learning Machine* 2015 - Present
 
-*Responsible for establishing and implementing all IT architecture principles, standards and guidelines*
+*Senior developer on a CRM cloud based application*
 
-* Designed and built an enterprise-wide asynchronous message processing service using .NET and RabbitMQ handling thousands of message a day
-* Implemented company-wide fully automated continuous integration build and deployments using TeamCity and Octopus Deployment
-* Introduced MongoDB for a storing large amounts of data for background processing
-* Architected an enterprise-wide document storage solution using Azure Storage and local SQL Server metadata for document querying
-* Conducts reviews of component designs and code to ensure best usage of the proposed architecture
+* Developed mapping solution for CRM platform
+* Created API integrations to 12 different cloud platforms
+* Implement search solution using ElasticSearch
 
 **Open Source Contributor** *LoreSoft.com* 1998 - Present   
 
@@ -36,6 +34,17 @@ title: Resume of Paul Welter
 * Project owner and main contributor of the [MSBuild Community Task](https://github.com/loresoft/msbuildtasks) project that adds many build tasks to the .NET build system; over 130,000 downloads
 * Designed and built a project estimation application called [EstimatorX.com](http://estimatorx.com/), utilizing ASP.NET MVC, AngularJS and MongoDB
 * Created [KickStart](https://github.com/loresoft/KickStart), a .NET application start-up library to initialize an IoC container, register mapping information or run startup tasks
+
+
+**Enterprise Architect** *Novus Media Inc.* 2011 – 2015   
+
+*Responsible for establishing and implementing all IT architecture principles, standards and guidelines*
+
+* Designed and built an enterprise-wide asynchronous message processing service using .NET and RabbitMQ handling thousands of message a day
+* Implemented company-wide fully automated continuous integration build and deployments using TeamCity and Octopus Deployment
+* Introduced MongoDB for a storing large amounts of data for background processing
+* Architected an enterprise-wide document storage solution using Azure Storage and local SQL Server metadata for document querying
+* Conducts reviews of component designs and code to ensure best usage of the proposed architecture
 
 **Senior Software Engineer** *The Weidt Group* 2011
 
