@@ -1,7 +1,7 @@
 ---
 layout: post
 dateCreated: 11/28/2016 12:00:00 PM
-title: EntityChange - Library to compare two entity object graphs detecting changes
+title: EntityChange - Library to compare two entity object graphs
 tags:
 - compare
 - change detection 
