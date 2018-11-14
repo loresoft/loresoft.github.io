@@ -52,17 +52,17 @@ Replace `<ConnectionString>` with a valid database connection string.
 
 The `generate` command will create the follow files and directory structure by default.  The root directory defaults to the current working directory.  Most of the output names and locations can be customized in the [configuration file](configuration.md)
 
-#### Entities Directory
+#### Data Context Output
+
+The EntityFramework DbContext file will be created in the root directory.
+
+#### Entities Output
 
 The entities directory will contain the generated source file for entity class representing each table.
 
-#### Mapping Directory
+#### Mapping Output
 
 The mapping directory contains a fluent mapping class to map each entity to its table.
-
-#### Data Context File
-
-The EntityFramework DbContext file will be created in the root directory.
 
 ## Initialize Command
 
@@ -158,3 +158,7 @@ database:
 ## Database Schema
 
 The database schema is loaded from the metadata model factory implementation of `IDatabaseModelFactory`.  Entity Framework Core Generator uses the implemented interface from each of the supported providers similar to how `ef dbcontext scaffold` works.
+
+## View Models
+
+Entity Framework Core Generator supports generating [Read](https://efg.loresoft.com/en/latest/md/read/), [Create](https://efg.loresoft.com/en/latest/md/create/) and [Update](https://efg.loresoft.com/en/latest/md/update/) view models from an entity.  Many projects rely on view models to shape data.  The model templates can be used to quickly get the basic view models created.  The model templates also support regeneration so any database change can easily be sync'd to the view models.  
