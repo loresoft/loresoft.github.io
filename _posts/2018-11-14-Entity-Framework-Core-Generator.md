@@ -1,7 +1,7 @@
 ---
 layout: post
 dateCreated: 11/14/2018 12:00:00 PM
-title: Entity Framework Core Generator
+title: Entity Framework Core Generator - Generating a model from an existing database
 tags:
 - Entity Framework
 - EntityFramework
@@ -10,7 +10,7 @@ tags:
 
 ## Overview
 
-.NET Core command-line (CLI) tool to generate Entity Framework Core source files from a database model.
+.NET Core command-line (CLI) tool to generate Entity Framework Core model from an existing database.
 
 - NuGet: [https://nuget.org/packages/EntityFrameworkCore.Generator](https://nuget.org/packages/EntityFrameworkCore.Generator "NuGet Package")
 - Source: [http://github.com/loresoft/EntityFrameworkCore.Generator](https://github.com/loresoft/EntityFrameworkCore.Generator "Project Source")
@@ -50,7 +50,7 @@ Replace `<ConnectionString>` with a valid database connection string.
 
 ### Generation Output
 
-The `generate` command will create the follow files and directory structure by default.  The root directory defaults to the current working directory.  Most of the output names and locations can be customized in the [configuration file](configuration.md)
+The `generate` command will create the follow files and directory structure by default.  The root directory defaults to the current working directory.  Most of the output names and locations can be customized in the [configuration file](https://efg.loresoft.com/en/latest/configuration/)
 
 #### Data Context Output
 
@@ -82,7 +82,7 @@ Entity Framework Core Generator supports safe regeneration via region replacemen
 
 ### Region Replacement
 
-All the templates output a region on first generation.  On future regeneration, only the regions are replaced.  This keeps any other changes you've made the the source file.
+All the templates output a region on first generation.  On future regeneration, only the regions are replaced.  This keeps any other changes you've made to the source file.
 
 Example of a generated entity class
 
