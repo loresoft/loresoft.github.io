@@ -53,7 +53,7 @@ dotnet add package Swashbuckle.AspNetCore
 
 ## Entity Framework Core Generator
 
-To use Entity Framework Core Generator, you need to install the NET Core Global Tool.
+To use Entity Framework Core Generator, you need to install the .NET Core Global Tool.
 
 ```shell
 dotnet tool install --global EntityFrameworkCore.Generator
@@ -63,7 +63,7 @@ After the tool has been install, the `efg` command line will be available.  Run 
 
 ## Initialize Configuration
 
-Entity Framework Core Generator has many options available to customize the generated output.  The `initialize` command is used to create the configuration yaml file and optionally set the database [connection string](https://efg.loresoft.com/en/latest/connectionString/). Update [configuration file](https://efg.loresoft.com/en/latest/configuration/) to configure the generated output.
+Entity Framework Core Generator has many options available to customize the generated output.  The `initialize` command is used to create the configuration yaml file and optionally set the database [connection string](https://efg.loresoft.com/en/latest/connectionString/). Update the [configuration file](https://efg.loresoft.com/en/latest/configuration/) to configure the generated output.
 
 The following command will create an initial `generation.yaml` configuration file as well as setting a user secret to store the connection string.
 
@@ -262,6 +262,7 @@ namespace Tracker
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            // sharing the user secret configuration file
             var connectionString = Configuration.GetConnectionString("Tracker");
 
             services.AddDbContext<TrackerContext>(options => options.UseSqlServer(connectionString));
@@ -490,7 +491,7 @@ namespace Tracker.Controllers
         [HttpPost("")]
         public async Task<ActionResult<TaskReadModel>> Create(CancellationToken cancellationToken, TaskCreateModel createModel)
         {
-            var readModel = await CreateModel(createModel, cancellationToken).ConfigureAwait(false);
+            var readModel = await CreateModel(createModel, cancellationToken);
 
             return readModel;
         }
@@ -498,7 +499,7 @@ namespace Tracker.Controllers
         [HttpPut("{id}")]
         public async Task<ActionResult<TaskReadModel>> Update(CancellationToken cancellationToken, Guid id, TaskUpdateModel updateModel)
         {
-            var readModel = await UpdateModel(id, updateModel, cancellationToken).ConfigureAwait(false);
+            var readModel = await UpdateModel(id, updateModel, cancellationToken);
             if (readModel == null)
                 return NotFound();
 
@@ -508,7 +509,7 @@ namespace Tracker.Controllers
         [HttpDelete("{id}")]
         public async Task<ActionResult<TaskReadModel>> Delete(CancellationToken cancellationToken, Guid id)
         {
-            var readModel = await DeleteModel(id, cancellationToken).ConfigureAwait(false);
+            var readModel = await DeleteModel(id, cancellationToken);
             if (readModel == null)
                 return NotFound();
 
