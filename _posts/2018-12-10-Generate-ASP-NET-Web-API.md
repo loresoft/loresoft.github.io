@@ -45,7 +45,7 @@ You'll need a few nuget packages for the [mapper](http://efg.loresoft.com/en/lat
 ```shell
 dotnet add package AutoMapper
 dotnet add package AutoMapper.Extensions.Microsoft.DependencyInjection
-dotnet add package FluentValidation
+dotnet add package FluentValidation.AspNetCore
 dotnet add package Swashbuckle.AspNetCore
 ```
 
@@ -270,7 +270,10 @@ namespace Tracker
             // register AutoMapper profiles
             services.AddAutoMapper();
 
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services
+                .AddMvc()
+                .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<Startup>()) // register validators
+                .SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
             // Register the Swagger generator
             services.AddSwaggerGen(c =>
