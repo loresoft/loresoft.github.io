@@ -13,9 +13,9 @@ tags:
 
 The LoreSoft Blazor Controls project contains a collection of Blazor user controls.
 
-* Demo: [http://blazor.loresoft.com/](http://blazor.loresoft.com/ "LoreSoft Blazor Controls")
+* Demo: [https://blazor.loresoft.com/](https://blazor.loresoft.com/ "LoreSoft Blazor Controls")
 * NuGet: [https://nuget.org/packages/LoreSoft.Blazor.Controls](https://nuget.org/packages/LoreSoft.Blazor.Controls "NuGet Package")
-* Source: [http://github.com/loresoft/LoreSoft.Blazor.Controls](https://github.com/loresoft/LoreSoft.Blazor.Controls "Project Source")
+* Source: [https://github.com/loresoft/LoreSoft.Blazor.Controls](https://github.com/loresoft/LoreSoft.Blazor.Controls "Project Source")
 
 ## Installing
 
@@ -145,7 +145,7 @@ When you want to be able to select multiple results.  Bind to the `Values` prope
  }
  ```
 
-### GitHub repository Search
+### GitHub Repository Search
 
 Use Octokit to search for a GitHub repository.
 
