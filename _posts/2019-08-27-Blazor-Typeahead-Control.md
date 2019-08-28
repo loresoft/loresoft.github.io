@@ -145,7 +145,7 @@ When you want to be able to select multiple results.  Bind to the `Values` prope
  }
  ```
 
-### GitHub repository Search</h3>
+### GitHub repository Search
 
 Use Octokit to search for a GitHub repository.
 
