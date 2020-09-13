@@ -18,25 +18,35 @@ title: Resume of Paul Welter
 
 ## Professional Experience
 
-**Senior Software Engineer** *Learning Machine* 2015 - Present
+**Senior Software Engineer** *Emergent Software* 2020 - Present
 
-*Senior developer on a CRM cloud based application*
+*Full stack custom software consulting*
 
-* Developed mapping solution for CRM platform
-* Created API integrations to 12 different cloud platforms
-* Implement search solution using ElasticSearch
-
-**Open Source Contributor** *LoreSoft.com* 1998 - Present   
+**Open Source Contributor** *LoreSoft.com* 1998 - Present
 
 *Significate open source contributions for the development community*
 
-* Created [Entity Framework Extended](https://github.com/loresoft/EntityFramework.Extended) library including batch updates, future queries and audit logging capabilities to Entity Framework; over 110,000 downloads
+* Created [Entity Framework Core Generator](https://github.com/loresoft/EntityFrameworkCore.Generator) tool to generate Entity Framework models from an existing database
 * Project owner and main contributor of the [MSBuild Community Task](https://github.com/loresoft/msbuildtasks) project that adds many build tasks to the .NET build system; over 130,000 downloads
 * Designed and built a project estimation application called [EstimatorX.com](http://estimatorx.com/), utilizing ASP.NET MVC, AngularJS and MongoDB
 * Created [KickStart](https://github.com/loresoft/KickStart), a .NET application start-up library to initialize an IoC container, register mapping information or run startup tasks
 
+**Software Engineer III** *C.H. Robinson* 2018 - 2020
 
-**Enterprise Architect** *Novus Media Inc.* 2011 – 2015   
+*Inner-source software delivery team*
+
+* Developed application features across multiple product teams
+* Reviewed pull request, conducted code reviews and mentored junior developers 
+
+**Principal Software Architect** *Learning Machine* 2015 - 2018
+
+*Responsible for service layer of blockchain-based certificates for academic credentials application*
+
+* Developed command query (CQRS) based architecture for service layer
+* Created API integrations to 12 different cloud platforms
+* Implement search solution using ElasticSearch
+
+**Enterprise Architect** *Novus Media Inc.* 2011 – 2015
 
 *Responsible for establishing and implementing all IT architecture principles, standards and guidelines*
 
