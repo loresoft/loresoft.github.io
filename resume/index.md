@@ -4,7 +4,7 @@ title: Resume of Paul Welter
 ---
 
 **Paul Welter**   
-[www.loresoft.com](http://www.loresoft.com/)   
+[loresoft.com](http://loresoft.com/)   
 [pwelter@loresoft.com](mailto:pwelter@loresoft.com)
 
 ## Summary of Qualifications

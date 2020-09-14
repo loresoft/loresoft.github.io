@@ -33,7 +33,7 @@ result = eval.Evaluate("x * 10");
 
 Calculator that evaluates math expressions. 
 
-![Calculator.NET](http://www.loresoft.com/assets/Calculator.png)
+![Calculator.NET](http://loresoft.com/assets/Calculator.png)
 
 **Calculator.NET Features**
 
