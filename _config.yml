@@ -6,7 +6,7 @@ permalink: /:title
 paginate: 5
 
 baseurl: '/'
-url: https://www.loresoft.com
+url: https://loresoft.com
 
 disqus: 'loresoft'
 analytics: 'UA-575771-2'
