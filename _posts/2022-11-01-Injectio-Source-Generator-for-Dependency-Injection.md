@@ -11,8 +11,8 @@ tags:
 
 Source generator that helps register discovered services in the dependency injection container
 
-<https://github.com/loresoft/Injectio>
-<https://www.nuget.org/packages/Injectio>
+- <https://github.com/loresoft/Injectio>
+- <https://www.nuget.org/packages/Injectio>
 
 ## Features
 
