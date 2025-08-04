@@ -1,9 +1,11 @@
 ---
 layout: post
-dateCreated: 08/01/2025 12:00:00 PM
-title: AspNetCore.SecurityKey - Security API Key Authentication Implementation for ASP.NET Core
-tags:
-- ASP.NET Core
+title: "AspNetCore.SecurityKey - Security API Key Authentication Implementation for ASP.NET Core"
+dateCreated: 2025-08-01 12:00:00 -0500
+categories: [Development, Security]
+tags: [asp-net-core, authentication, api-key, security, nuget]
+description: "A flexible and lightweight API key authentication library for ASP.NET Core applications that supports multiple authentication patterns and integrates seamlessly with ASP.NET Core's authentication and authorization infrastructure."
+author: LoreSoft
 ---
 
 A flexible and lightweight API key authentication library for ASP.NET Core applications that supports multiple authentication patterns and integrates seamlessly with ASP.NET Core's authentication and authorization infrastructure.
