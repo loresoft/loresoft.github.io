@@ -3,8 +3,9 @@ languageCode = 'en-us'
 title = 'LoreSoft.com'
 
 enableGitInfo = true
-disableAliases = false
 enableRobotsTXT = true
+disableAliases = false
+disableHugoGeneratorInject = true
 
 [params]
   description = "LoreSoft.com - Software Development and Technology Blog featuring .NET, C#, web development, and programming tutorials"
