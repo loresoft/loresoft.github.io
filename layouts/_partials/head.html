@@ -81,6 +81,8 @@
 {{- if $isPage }}<meta name="date" content="{{ .Date.Format "2006-01-02" }}">{{ end -}}
 {{- with .Lastmod }}<meta name="last-modified" content="{{ .Format "2006-01-02" }}">{{ end -}}
 
+<link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }} RSS Feed" href="{{ .RSSLink }}">
+
 <title>{{- $title -}}</title>
 
 <link rel="preconnect"
