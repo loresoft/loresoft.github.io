@@ -4,7 +4,7 @@ title = 'Calculator.NET - Calculator that evaluates math expressions'
 url = 'Calculator-NET-Calculator-that-evaluates-math-expressions'
 tags = ['calculator', 'math', 'dotnet']
 categories = ['Projects']
-author = 'LoreSoft'
+author = 'Paul Welter'
 description = 'Calculator.NET project with MathExpressions library for evaluating mathematical expressions.'
 +++
 

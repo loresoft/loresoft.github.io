@@ -4,7 +4,7 @@ title = 'Entity Framework Batch Update and Future Queries'
 url = 'Entity-Framework-Batch-Update-and-Future-Queries'
 tags = ['entity-framework', 'batch-operations']
 categories = ['Libraries']
-author = 'LoreSoft'
+author = 'Paul Welter'
 description = 'Entity Framework Extended Library providing batch update/delete and future query functionality.'
 +++
 

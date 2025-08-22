@@ -4,7 +4,7 @@ title = 'FluentCommand - Fluent Wrapper for DbCommand'
 url = 'FluentCommand-Fluent-Wrapper-for-DbCommand'
 tags = ['dbcommand', 'fluent-api', 'database']
 categories = ['Libraries']
-author = 'LoreSoft'
+author = 'Paul Welter'
 description = 'FluentCommand library providing a fluent wrapper for DbCommand database operations.'
 +++
 

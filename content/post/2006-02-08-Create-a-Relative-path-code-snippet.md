@@ -4,7 +4,7 @@ title = 'Create a Relative path code snippet'
 url = 'Create-a-Relative-path-code-snippet'
 tags = ['snippets', 'file-system']
 categories = ['Examples']
-author = 'LoreSoft'
+author = 'Paul Welter'
 description = 'C# code snippet equivalent to the Windows API PathRelativePathTo for creating relative paths.'
 +++
 

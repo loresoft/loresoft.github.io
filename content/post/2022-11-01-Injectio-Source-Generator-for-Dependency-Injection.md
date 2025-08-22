@@ -5,7 +5,7 @@ date = '2022-11-01T12:00:00-05:00'
 categories = ['Development', 'Tools']
 tags = ['dependency-injection', 'source-generator', 'csharp', 'dotnet']
 description = "A source generator that simplifies service registration in the dependency injection container with various strategies."
-author = 'LoreSoft'
+author = 'Paul Welter'
 +++
 
 

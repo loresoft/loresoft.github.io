@@ -4,7 +4,7 @@ title = 'WilsonORMapper CodeSmith Templates'
 url = 'WilsonORMapper-CodeSmith-Templates'
 tags = ['codesmith', 'orm']
 categories = ['Tools']
-author = 'LoreSoft'
+author = 'Paul Welter'
 description = 'CodeSmith templates for generating WilsonORMapper mapping files and business classes.'
 +++
 

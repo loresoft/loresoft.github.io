@@ -4,7 +4,7 @@ title = 'Draco.NET version 1.6.4.0 Released'
 url = 'Draco-NET-version-1-6-4-0-Released'
 tags = ['draco-net', 'release']
 categories = ['Projects']
-author = 'LoreSoft'
+author = 'Paul Welter'
 description = 'Release announcement for Draco.NET version 1.6.4.0 with Visual Studio 2005 and MSBuild support.'
 +++
 

@@ -4,7 +4,7 @@ title = 'Caching the results from LinqDataSource'
 url = 'Caching-the-results-from-LinqDataSource'
 tags = ['snippets', 'linq', 'caching']
 categories = ['Examples']
-author = 'LoreSoft'
+author = 'Paul Welter'
 description = 'LinqCacheDataSource class for caching LINQ query results in ASP.NET applications.'
 +++
 

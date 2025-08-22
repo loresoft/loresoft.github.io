@@ -4,7 +4,7 @@ title = 'EstimatorX - Project Estimation Application'
 url = 'EstimatorX-Project-Estimation-Application'
 tags = ['estimatorx', 'project-management', 'estimation']
 categories = ['Applications']
-author = 'LoreSoft'
+author = 'Paul Welter'
 description = 'EstimatorX - A simple web-based project estimation application for managing project tasks and estimates.'
 +++
 

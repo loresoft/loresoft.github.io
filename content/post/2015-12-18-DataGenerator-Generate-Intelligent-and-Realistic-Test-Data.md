@@ -4,7 +4,7 @@ title = 'DataGenerator - Generate Intelligent and Realistic Test Data'
 url = 'DataGenerator-Generate-Intelligent-and-Realistic-Test-Data'
 tags = ['test', 'data', 'generation', 'fake', 'sample']
 categories = ['Libraries']
-author = 'LoreSoft'
+author = 'Paul Welter'
 description = 'DataGenerator library for generating intelligent and realistic test data based on property types and names.'
 +++
 

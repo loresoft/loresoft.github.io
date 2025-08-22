@@ -5,7 +5,7 @@ url = 'Equatable.Generator-Source-Generator-for-Equals-and-GetHashCode'
 categories = ['Development', 'Tools']
 tags = ['equals', 'gethashcode', 'source-generator', 'csharp', 'dotnet']
 description = "A source generator for Equals and GetHashCode that supports class, record, and struct types with various comparers."
-author = 'LoreSoft'
+author = 'Paul Welter'
 +++
 
 

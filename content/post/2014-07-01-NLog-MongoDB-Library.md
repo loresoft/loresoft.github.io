@@ -4,7 +4,7 @@ title = 'NLog MongoDB Library'
 url = 'NLog-MongoDB-Library'
 tags = ['nlog', 'mongodb', 'logging']
 categories = ['Libraries']
-author = 'LoreSoft'
+author = 'Paul Welter'
 description = 'NLog.Mongo library for writing NLog messages to MongoDB databases.'
 +++
 

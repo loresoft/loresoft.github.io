@@ -4,7 +4,7 @@ title = 'NLog Fluent Library'
 url = 'NLog-Fluent-Library'
 tags = ['nlog', 'fluent-api', 'logging']
 categories = ['Libraries']
-author = 'LoreSoft'
+author = 'Paul Welter'
 description = 'NLog.Fluent library providing a fluent API for NLog logging framework.'
 +++
 

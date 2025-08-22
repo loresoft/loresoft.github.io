@@ -4,7 +4,7 @@ title = 'Fix for the RichTextBox Undo Information Lost When Retrieving Text'
 url = 'Fix-for-the-RichTextBox-Undo-Information-Lost-When-Retrieving-Text'
 tags = ['snippets']
 categories = ['Examples']
-author = 'LoreSoft'
+author = 'Paul Welter'
 description = 'Workaround for RichTextBox undo information lost issue.'
 +++
 

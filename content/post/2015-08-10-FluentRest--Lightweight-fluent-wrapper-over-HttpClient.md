@@ -4,7 +4,7 @@ title = 'FluentRest - Lightweight fluent wrapper over HttpClient'
 url = 'FluentRest--Lightweight-fluent-wrapper-over-HttpClient'
 tags = ['fluent', 'httpclient', 'http', 'rest']
 categories = ['Libraries']
-author = 'LoreSoft'
+author = 'Paul Welter'
 description = 'FluentRest - Lightweight fluent wrapper over HttpClient for building REST API requests.'
 +++
 

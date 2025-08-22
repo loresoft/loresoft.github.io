@@ -4,7 +4,7 @@ title = 'EntityChange - Library to compare two entity object graphs'
 url = 'EntityChange-Library-to-compare-two-object-graphs'
 tags = ['compare', 'change-detection', 'object-graph']
 categories = ['Libraries']
-author = 'LoreSoft'
+author = 'Paul Welter'
 description = 'EntityChange library for comparing two entity object graphs and detecting changes in entities, collections, and dictionaries.'
 +++
 

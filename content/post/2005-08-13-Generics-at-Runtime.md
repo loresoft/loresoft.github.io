@@ -4,7 +4,7 @@ title = 'Generics at Runtime'
 url = 'Generics-at-Runtime'
 tags = ['snippets', 'dotnet', 'generics']
 categories = ['Examples']
-author = 'LoreSoft'
+author = 'Paul Welter'
 description = 'Demonstration of how to use .NET Generics at runtime with reflection.'
 +++
 

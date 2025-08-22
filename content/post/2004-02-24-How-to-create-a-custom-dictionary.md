@@ -4,7 +4,7 @@ title = 'How to create a custom dictionary'
 url = 'How-to-create-a-custom-dictionary'
 tags = ['dictionary']
 categories = ['Tutorials']
-author = 'LoreSoft'
+author = 'Paul Welter'
 description = 'Steps to create a custom dictionary for spell checking.'
 +++
 

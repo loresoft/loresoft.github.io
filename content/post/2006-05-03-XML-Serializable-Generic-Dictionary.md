@@ -4,7 +4,7 @@ title = 'XML Serializable Generic Dictionary'
 url = 'XML-Serializable-Generic-Dictionary'
 tags = ['snippets', 'xml', 'serialization']
 categories = ['Examples']
-author = 'LoreSoft'
+author = 'Paul Welter'
 description = 'XML serializable generic dictionary implementation using IXmlSerializable interface.'
 +++
 

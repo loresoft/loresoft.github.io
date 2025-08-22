@@ -4,7 +4,7 @@ title = 'The NetSpell project'
 url = 'The-NetSpell-project'
 tags = ['netspell']
 categories = ['Projects']
-author = 'LoreSoft'
+author = 'Paul Welter'
 description = 'An overview of the NetSpell project, a spell checking engine written in C#.'
 +++
 

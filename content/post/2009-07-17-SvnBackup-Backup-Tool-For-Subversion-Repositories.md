@@ -4,7 +4,7 @@ title = 'SvnBackup - Backup Tool For Subversion Repositories'
 url = 'SvnBackup-Backup-Tool-For-Subversion-Repositories'
 tags = ['svn-tools', 'subversion', 'backup']
 categories = ['Tools']
-author = 'LoreSoft'
+author = 'Paul Welter'
 description = 'Command line backup tool for Subversion repositories with hotcopy and folder management features.'
 +++
 

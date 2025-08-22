@@ -5,7 +5,7 @@ url = 'AspNetCore.SecurityKey-Security-API-Key-Authentication'
 categories = ['Development', 'Security']
 tags = ['asp-net-core', 'authentication', 'api-key', 'security']
 description = "A flexible and lightweight API key authentication library for ASP.NET Core applications that supports multiple authentication patterns and integrates seamlessly with ASP.NET Core's authentication and authorization infrastructure."
-author = 'LoreSoft'
+author = 'Paul Welter'
 +++
 
 

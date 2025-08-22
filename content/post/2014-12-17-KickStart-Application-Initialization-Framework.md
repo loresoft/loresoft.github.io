@@ -4,7 +4,7 @@ title = 'KickStart - Application Initialization Framework'
 url = 'KickStart-Application-Initialization-Framework'
 tags = ['kickstart', 'initialization', 'framework']
 categories = ['Libraries']
-author = 'LoreSoft'
+author = 'Paul Welter'
 description = 'Application start-up helper framework for initializing IoC containers, mappings, and startup tasks.'
 +++
 

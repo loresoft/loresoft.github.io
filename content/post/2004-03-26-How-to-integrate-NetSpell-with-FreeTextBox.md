@@ -4,7 +4,7 @@ title = 'How to integrate NetSpell with FreeTextBox'
 url = 'How-to-integrate-NetSpell-with-FreeTextBox'
 tags = ['netspell', 'freetextbox']
 categories = ['Tutorials']
-author = 'LoreSoft'
+author = 'Paul Welter'
 description = 'Guide to integrate NetSpell with FreeTextBox.'
 +++
 

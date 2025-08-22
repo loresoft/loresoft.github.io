@@ -5,7 +5,7 @@ url = 'Blazor-Typeahead-Control'
 categories = ['Development']
 tags = ['blazor', 'typeahead', 'controls', 'csharp', 'dotnet']
 description = "A Blazor Typeahead control as part of the LoreSoft Blazor Controls project, providing user-friendly components for modern web applications."
-author = 'LoreSoft'
+author = 'Paul Welter'
 +++
 
 

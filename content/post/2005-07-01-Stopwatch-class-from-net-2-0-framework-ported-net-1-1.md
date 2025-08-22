@@ -4,7 +4,7 @@ title = 'Stopwatch class from .net 2.0 framework ported .net 1.1'
 url = 'Stopwatch-class-from-net-2-0-framework-ported-net-1-1'
 tags = ['snippets', 'dotnet']
 categories = ['Examples']
-author = 'LoreSoft'
+author = 'Paul Welter'
 description = 'A back-port of the .NET 2.0 Stopwatch class to .NET 1.1 framework.'
 +++
 

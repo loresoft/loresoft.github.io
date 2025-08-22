@@ -4,7 +4,7 @@ title = 'Easier way to page Linq queries.'
 url = 'Easier-way-to-page-Linq-queries'
 tags = ['snippets', 'linq', 'paging']
 categories = ['Examples']
-author = 'LoreSoft'
+author = 'Paul Welter'
 description = 'Query extension to make paging LINQ queries more natural than using Skip and Take.'
 +++
 

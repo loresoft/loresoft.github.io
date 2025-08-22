@@ -4,7 +4,7 @@ title = 'Google Toolbar Spell Check API'
 url = 'Google-Toolbar-Spell-Check-API'
 tags = ['netspell', 'google', 'api']
 categories = ['Development']
-author = 'LoreSoft'
+author = 'Paul Welter'
 description = 'Reverse engineering the Google Toolbar spell check API for integration with NetSpell.'
 +++
 

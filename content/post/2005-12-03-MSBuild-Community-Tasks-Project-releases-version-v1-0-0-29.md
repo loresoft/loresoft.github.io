@@ -4,7 +4,7 @@ title = 'MSBuild Community Tasks Project releases version v1.0.0.29'
 url = 'MSBuild-Community-Tasks-Project-releases-version-v1-0-0-29'
 tags = ['msbuild', 'release']
 categories = ['Projects']
-author = 'LoreSoft'
+author = 'Paul Welter'
 description = 'Release announcement for MSBuild Community Tasks Project version v1.0.0.29.'
 +++
 

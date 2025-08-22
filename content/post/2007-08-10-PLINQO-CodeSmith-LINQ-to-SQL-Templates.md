@@ -4,7 +4,7 @@ title = 'PLINQO - CodeSmith LINQ to SQL Templates'
 url = 'PLINQO-CodeSmith-LINQ-to-SQL-Templates'
 tags = ['codesmith', 'linq', 'templates']
 categories = ['Projects']
-author = 'LoreSoft'
+author = 'Paul Welter'
 description = 'PLINQO - Professional LINQ to Objects CodeSmith templates for LINQ to SQL development.'
 +++
 

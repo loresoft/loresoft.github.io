@@ -4,7 +4,7 @@ title = 'Code Snippet to Convert Word Tense'
 url = 'Code-Snippet-to-Convert-Word-Tense'
 tags = ['snippets']
 categories = ['Examples']
-author = 'LoreSoft'
+author = 'Paul Welter'
 description = 'Code snippet to convert word tense using regular expressions.'
 +++
 

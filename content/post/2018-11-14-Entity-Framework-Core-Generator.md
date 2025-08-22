@@ -4,7 +4,7 @@ title = 'Entity Framework Core Generator - Generating a model from an existing d
 url = 'Entity-Framework-Core-Generator'
 tags = ['entity-framework', 'entity-framework-core']
 categories = ['Tools']
-author = 'LoreSoft'
+author = 'Paul Welter'
 description = '.NET Core CLI tool to generate Entity Framework Core model from an existing database.'
 +++
 

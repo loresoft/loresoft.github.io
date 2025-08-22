@@ -4,7 +4,7 @@ title = 'Sample build file using MSBuild Community Tasks'
 url = 'Sample-build-file-using-MSBuild-Community-Tasks'
 tags = ['msbuild', 'build']
 categories = ['Examples']
-author = 'LoreSoft'
+author = 'Paul Welter'
 description = 'Sample build project demonstrating the use of MSBuild Community Tasks for creating releases.'
 +++
 

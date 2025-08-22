@@ -4,7 +4,7 @@ title = 'MSBuild Community Task Collaboration Project'
 url = 'MSBuild-Community-Task-Collaboration-Project'
 tags = ['msbuild', 'open-source']
 categories = ['Projects']
-author = 'LoreSoft'
+author = 'Paul Welter'
 description = 'Announcement of the MSBuild Community Task Collaboration Project for sharing MSBuild tasks.'
 +++
 

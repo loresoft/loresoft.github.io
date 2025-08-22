@@ -4,7 +4,7 @@ title = 'Optimize LINQ to SQL with PLINQO Futures'
 url = 'Optimize-LINQ-to-SQL-with-PLINQO-Futures'
 tags = ['plinqo', 'linq', 'performance']
 categories = ['Development']
-author = 'LoreSoft'
+author = 'Paul Welter'
 description = 'PLINQO future queries for batching deferred queries and optimizing database round trips.'
 +++
 
