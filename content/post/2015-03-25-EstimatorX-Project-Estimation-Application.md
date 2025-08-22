@@ -9,12 +9,10 @@ aliases = ['/EstimatorX-Project-Estimation-Application']
 description = 'Web-based project estimation application with structured task breakdown, complexity scaling, contingency planning, assumptions tracking, reusable templates, and collaborative organization features for accurate project planning.'
 +++
 
-![EstimatorX](https://raw.githubusercontent.com/loresoft/Estimatorx/master/Code/Source/Estimatorx.Web/Content/EstimatorX-logo.png)
+![EstimatorX](/images/EstimatorX-logo.png "EstimatorX")
 
 A simple project estimation application.  
 [http://estimatorx.com](http://estimatorx.com "EstimatorX")
-
-![Project Tasks](https://raw.githubusercontent.com/loresoft/Estimatorx/master/Design/Project-Tasks-Capture.PNG)
 
 ## Features
 
