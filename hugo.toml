@@ -2,7 +2,6 @@ baseURL = 'https://loresoft.com/'
 languageCode = 'en-us'
 title = 'LoreSoft.com'
 
-# Enable alias redirects and 404 page
 enableGitInfo = true
 disableAliases = false
 
@@ -22,6 +21,8 @@ disableAliases = false
 [services]
   [services.disqus]
     shortname = 'loresoft'
+  [services.googleAnalytics]
+    id = 'G-TTY1SJ9PV9'
 
 [caches]
   [caches.images]
