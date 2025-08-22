@@ -1,10 +1,12 @@
----
-layout: post
-dateCreated: 7/1/2005 12:00:00 AM
-title: Stopwatch class from .net 2.0 framework ported .net 1.1
-tags:
-- Snippets
----
++++
+date = '2005-07-01T00:00:00-05:00'
+title = 'Stopwatch class from .net 2.0 framework ported .net 1.1'
+url = 'Stopwatch-class-from-net-2-0-framework-ported-net-1-1'
+tags = ['snippets', 'dotnet']
+categories = ['Examples']
+author = 'LoreSoft'
+description = 'A back-port of the .NET 2.0 Stopwatch class to .NET 1.1 framework.'
++++
 
 Here is the handy Stopwatch class from .net 2.0 framework back ported .net 1.1. Enjoy…
 
@@ -70,7 +72,7 @@ public class Stopwatch
         }  
         return ticks;  
     }  
-    private long GetRawElapsedTicks()          
+    private long GetRawElapsedTicks()
     {  
         long elapsedTimestamp = this.elapsed;  
         if (this.isRunning)  
@@ -85,7 +87,7 @@ public class Stopwatch
     #region Public Methods  
     /// <summary>Gets the current number of ticks in the timer mechanism.</summary>  
     /// <returns>A long integer representing the tick counter value of the underlying timer mechanism.</returns>  
-    public static long GetTimestamp()          
+    public static long GetTimestamp()
     {  
         if (Stopwatch.IsHighResolution)  
         {  
@@ -96,14 +98,14 @@ public class Stopwatch
         return DateTime.UtcNow.Ticks;  
     }  
     /// <summary>Stops time interval measurement and resets the elapsed time to zero.</summary>  
-    public void Reset()          
+    public void Reset()
     {  
         this.elapsed = 0;  
         this.isRunning = false;  
         this.startTimeStamp = 0;  
     }  
     /// <summary>Starts, or resumes, measuring elapsed time for an interval.</summary>  
-    public void Start()          
+    public void Start()
     {  
         if (!this.isRunning)  
         {  
@@ -113,14 +115,14 @@ public class Stopwatch
     }  
     /// <summary>Initializes a new Stopwatch instance, sets the elapsed time property to zero, and starts measuring elapsed time.</summary>  
     /// <returns>A Stopwatch that has just begun measuring elapsed time.</returns>  
-    public static Stopwatch StartNew()          
+    public static Stopwatch StartNew()
     {  
         Stopwatch stopwatch = new Stopwatch();  
         stopwatch.Start();  
         return stopwatch;  
     }  
     /// <summary>Stops measuring elapsed time for an interval.</summary>  
-    public void Stop()          
+    public void Stop()
     {  
         if (this.isRunning)  
         {  

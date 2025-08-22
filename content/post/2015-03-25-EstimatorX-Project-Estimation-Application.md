@@ -1,11 +1,16 @@
----
-layout: post
-dateCreated: 03/25/2015 12:00:00 PM
-title: EstimatorX - Project Estimation Application
----
++++
+date = '2015-03-25T12:00:00-05:00'
+title = 'EstimatorX - Project Estimation Application'
+url = 'EstimatorX-Project-Estimation-Application'
+tags = ['estimatorx', 'project-management', 'estimation']
+categories = ['Applications']
+author = 'LoreSoft'
+description = 'EstimatorX - A simple web-based project estimation application for managing project tasks and estimates.'
++++
+
 ![EstimatorX](https://raw.githubusercontent.com/loresoft/Estimatorx/master/Code/Source/Estimatorx.Web/Content/EstimatorX-logo.png)
 
-A simple project estimation application.   
+A simple project estimation application.  
 [http://estimatorx.com](http://estimatorx.com "EstimatorX")
 
 ![Project Tasks](https://raw.githubusercontent.com/loresoft/Estimatorx/master/Design/Project-Tasks-Capture.PNG)

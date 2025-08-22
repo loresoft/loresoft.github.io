@@ -1,21 +1,16 @@
----
-layout: post
-dateCreated: 10/20/2003 12:40:00 AM
-title: The NetSpell project
-tags:
-- Projects > NetSpell
-redirect_from:
-- "/NetSpell/index.html"
-- "/Applications/NetSpell/index.html"
-- "/Applications/NetSpell/default.aspx/index.html"
-- "/Applications/NetSpell/Download/default.aspx/index.html"
-- "/projects/netspell/default.aspx/index.html"
-- "/projects/netspell/the-netspell-project/default.aspx/index.html"
----
++++
+date = '2003-10-20T00:40:00-05:00'
+title = 'The NetSpell project'
+url = 'The-NetSpell-project'
+tags = ['netspell']
+categories = ['Projects']
+author = 'LoreSoft'
+description = 'An overview of the NetSpell project, a spell checking engine written in C#.'
++++
 
 ### Introduction
 
-The NetSpell project is a spell checking engine written entirely in managed C# .net code. NetSpell's suggestions for a misspelled word are generated using phonetic (sounds like) matching and ranked by a typographical (looks like) score. NetSpell supports multiple languages and the dictionaries are based on the OpenOffice Affix compression format. The library can be used in Windows or Web Form projects. The download includes an English dictionary with dictionaries for other languages available for download on the project web site. NetSpell also supports user added words and automatic creation of user dictionaries. It also includes a dictionary build tool to build custom dictionaries. 
+The NetSpell project is a spell checking engine written entirely in managed C# .net code. NetSpell's suggestions for a misspelled word are generated using phonetic (sounds like) matching and ranked by a typographical (looks like) score. NetSpell supports multiple languages and the dictionaries are based on the OpenOffice Affix compression format. The library can be used in Windows or Web Form projects. The download includes an English dictionary with dictionaries for other languages available for download on the project web site. NetSpell also supports user added words and automatic creation of user dictionaries. It also includes a dictionary build tool to build custom dictionaries.
 
 ### The Dictionary
 
@@ -35,26 +30,26 @@ As a result of using the OpenOffice dictionary format, NetSpell dictionaries are
 
 To satisfy the goal of making the dictionary a single file, I needed a way to separate different sections of the file. This would allow for storing different types of data as a word list was not the only data need to be stored. I decided to use the INI section format. I thought about using XML but XML carries a large weight in terms of file size because of the use of tags. I ended up with the following sections in the file.
 
-**[Copyright]**     
-The Copyright section contains any copyright information about the word list for the particular dictionary. 
+**[Copyright]**  
+The Copyright section contains any copyright information about the word list for the particular dictionary.
 
-**[Try]**     
+**[Try]**  
 The try section contains a sequence of letters that are used to try to make a correct word out of a misspelled word. They should be listed on a single line in order of character frequency (highest to lowest). This section is used by the Near Miss Strategy discussed later.
 
-**[Replace]**     
+**[Replace]**  
 The replace section contains a sequence of letter combinations that are often misspelled, for example ei and ie. The data is entered in this section in a _search characters_ space _replace characters_ format. The ei, ie example would look like this in the dictionary, &quot;ei ie&quot;. This section is used by the Near Miss Strategy discussed later.
 
-**[Prefix]**     
+**[Prefix]**  
 The prefix section is used to define a set of affix rules for prefixes that can be attached to the beginning of a base word to form other words. The format of these rules follows the same format as OpenOffice's affix files except the PFX is removed. You can read more about the OpenOffice affix format [here](http://lingucomponent.openoffice.org/affix.readme)
 
-**[Suffix]**     
+**[Suffix]**  
 The suffix section is used to define a set of affix rules for suffixes that can be attached to the end of a base word to form other words. The format of suffix rules follows the same format as OpenOffice's affix files except the SFX is removed. You can read more about the OpenOffice affix format [here](http://lingucomponent.openoffice.org/affix.readme)
 
-**[Phonetic]**     
+**[Phonetic]**  
 The phonetic section is optional and it contains a set of rules that define how to generate a phonetic code for a character or set of characters. The phonetic code is generated using Lawrence Philips' Metaphone Algorithm that has been adapted to a table format by the ASpell project. The NetSpell dictionary uses the same format that ASpell uses. ASpell phonetic maps can be used directly by NetSpell. See the following [link](http://savannah.gnu.org/download/aspell/manual/user/7_Adding.html#SECTION00830000000000000000) to learn more about the ASpell phonetic code.
 
-**[Words]**     
-The words section is the list of base words for the dictionary. The format for this section is _word/affix keys/phonetic code_. The affix keys and phonetic code portions are optional. The affix keys portion indicates which affix rules apply to this word. The phonetic code portion is a cache of the phonetic code for this word and is used by the phonetic suggestion strategy. 
+**[Words]**  
+The words section is the list of base words for the dictionary. The format for this section is _word/affix keys/phonetic code_. The affix keys and phonetic code portions are optional. The affix keys portion indicates which affix rules apply to this word. The phonetic code portion is a cache of the phonetic code for this word and is used by the phonetic suggestion strategy.
 
 Another important thing to know about dictionaries are that they are named to match the .net framework CultureInfo.Name property. For example the US English dictionary is named &quot;en-US.dic&quot;. The en-US match the CultureInfo.Name property. This allows the NetSpell library to default to the dictionary that corresponds to the computer's regional settings.
 
@@ -68,7 +63,7 @@ Once it has been determined that the word is misspell, we need to generate sugge
 
 ### Near Miss Strategy
 
-The near miss strategy is a fairly simple way to generate suggestions. Near miss takes the approach that the user didn't necessarily misspell the word but rather they mistyped it. Two words are considered near if they can be made identical by either inserting a blank space, interchanging two adjacent letter, changing one letter, deleting one letter or adding one letter. If a valid word is generated using these techniques, then it is added to the suggestion list. As you might have guessed, the near miss strategy doesn't provide the best list of suggestions when a word is truly misspelled. That is where the phonetic strategy kicks in. 
+The near miss strategy is a fairly simple way to generate suggestions. Near miss takes the approach that the user didn't necessarily misspell the word but rather they mistyped it. Two words are considered near if they can be made identical by either inserting a blank space, interchanging two adjacent letter, changing one letter, deleting one letter or adding one letter. If a valid word is generated using these techniques, then it is added to the suggestion list. As you might have guessed, the near miss strategy doesn't provide the best list of suggestions when a word is truly misspelled. That is where the phonetic strategy kicks in.
 
 ### Phonetic Strategy
 
@@ -86,52 +81,53 @@ Once we have a list of suggestions, we need some way to rank them by the most li
 
 ### Using the Library
 
-To use the NetSpell Library in your project you simply add a reference to NetSpell.SpellChecker.dll to the project. You can also add the library to the Visual Studio Toolbox to make it easier to interact with the properties. The library is event based so you have to handle the various events. Also, if you set the ShowDialog property to true, the library will using its internal suggestion form to display the suggestion when a MisspelledWord event occurs. 
+To use the NetSpell Library in your project you simply add a reference to NetSpell.SpellChecker.dll to the project. You can also add the library to the Visual Studio Toolbox to make it easier to interact with the properties. The library is event based so you have to handle the various events. Also, if you set the ShowDialog property to true, the library will using its internal suggestion form to display the suggestion when a MisspelledWord event occurs.
 
 The following code is a very simple implementation of the NetSpell library.
 
-    internal Windows.Forms.RichTextBox Document;  
-    internal Spelling SpellChecker;  
-      
-    // add event handlers  
-    SpellChecker.MisspelledWord += new MisspelledWordEventHandler(SpellChecker_MisspelledWord);  
-    SpellChecker.EndOfText += new EndOfTextEventHandler(SpellChecker_EndOfText);  
-    SpellChecker.DoubledWord += new DoubledWordEventHandler(SpellChecker_DoubledWord);  
-      
-    private void SpellChecker_DoubledWord(object sender, SpellingEventArgs args)  
-    {  
-        // update text  
-        Document.Text = SpellChecker.Text;  
-    }  
-      
-    private void SpellChecker_EndOfText(object sender, EventArgs args)  
-    {  
-        // update text  
-        Document.Text = SpellChecker.Text;  
-    }  
-      
-    private void SpellChecker_MisspelledWord(object sender, SpellingEventArgs args)  
-    {  
-        // update text  
-        Document.Text = SpellChecker.Text;  
-    }  
-      
-    // Start Spell Checking  
-    SpellChecker.Text = Document.Text;  
-    SpellChecker.SpellCheck();  
+```C#
+internal Windows.Forms.RichTextBox Document;
+internal Spelling SpellChecker;
 
-The project download includes two example application for the NetSpell Library. The first is a Windows forms text editor. The second is a web project that demonstrats using the library in a web enviroment.
+// add event handlers
+SpellChecker.MisspelledWord += new MisspelledWordEventHandler(SpellChecker_MisspelledWord);
+SpellChecker.EndOfText += new EndOfTextEventHandler(SpellChecker_EndOfText);
+SpellChecker.DoubledWord += new DoubledWordEventHandler(SpellChecker_DoubledWord);
+
+private void SpellChecker_DoubledWord(object sender, SpellingEventArgs args)
+{
+    // update text
+    Document.Text = SpellChecker.Text;
+}
+
+private void SpellChecker_EndOfText(object sender, EventArgs args)
+{
+    // update text
+    Document.Text = SpellChecker.Text;
+}
+
+private void SpellChecker_MisspelledWord(object sender, SpellingEventArgs args)
+{
+    // update text
+    Document.Text = SpellChecker.Text;
+}
+
+// Start Spell Checking
+SpellChecker.Text = Document.Text;
+SpellChecker.SpellCheck();
+```
+
+The project download includes two example application for the NetSpell Library. The first is a Windows forms text editor. The second is a web project that demonstrate using the library in a web environment.
 
 ### Conclusion
 
 The NetSpell project has been a fun and challenging project to work on. I plan to continue to improve and add new features to the library. The feature that I'm currently working on is real time spell checking, like MS Word. Please feel free to contact me with any suggestions, bug reports and feature request.
 
-
 ### References and Credits
 
-*   NetSpell Home Page [http://www.loresoft.com/NetSpell](http://www.loresoft.com/NetSpell)
-*   SourceForge Project Page [http://sourceforge.net/projects/netspell/](http://sourceforge.net/projects/netspell/)
-*   OpenOffice Lingucomponent [http://lingucomponent.openoffice.org/dictionary.html](http://lingucomponent.openoffice.org/dictionary.html)
-*   ASpell [http://aspell.net/](http://aspell.net/)
-*   Metaphone Algorithm [http://aspell.net/metaphone/](http://aspell.net/metaphone/)
-*   Dictionary Wordlists [http://wordlist.sourceforge.net/](http://wordlist.sourceforge.net/)
+* NetSpell Home Page [http://www.loresoft.com/NetSpell](http://www.loresoft.com/NetSpell)
+* SourceForge Project Page [http://sourceforge.net/projects/netspell/](http://sourceforge.net/projects/netspell/)
+* OpenOffice Lingucomponent [http://lingucomponent.openoffice.org/dictionary.html](http://lingucomponent.openoffice.org/dictionary.html)
+* ASpell [http://aspell.net/](http://aspell.net/)
+* Metaphone Algorithm [http://aspell.net/metaphone/](http://aspell.net/metaphone/)
+* Dictionary Wordlists [http://wordlist.sourceforge.net/](http://wordlist.sourceforge.net/)

@@ -1,10 +1,13 @@
----
-layout: post
-dateCreated: 11/29/2011 12:26:00 PM
-title: Entity Framework Batch Update and Future Queries
-tags:
-- EntityFramework
----
++++
+date = '2011-11-29T12:26:00-06:00'
+title = 'Entity Framework Batch Update and Future Queries'
+url = 'Entity-Framework-Batch-Update-and-Future-Queries'
+tags = ['entity-framework', 'batch-operations']
+categories = ['Libraries']
+author = 'LoreSoft'
+description = 'Entity Framework Extended Library providing batch update/delete and future query functionality.'
++++
+
 
 ## Entity Framework Extended Library
 
@@ -18,16 +21,18 @@ A library the extends the functionality of Entity Framework.
 
 #### Project Package and Source
 
-NuGet Package: 
+NuGet Package:
 
-	Install-Package EntityFramework.Extended
+```powershell
+Install-Package EntityFramework.Extended
+```
 
 * NuGet: [http://nuget.org/List/Packages/EntityFramework.Extended](https://github.com/loresoft/EntityFramework.Extended "NuGet Package")
 * Source: [http://github.com/loresoft/EntityFramework.Extended](https://github.com/loresoft/EntityFramework.Extended "Project Source")
 
 #### Batch Update and Delete
 
-A current limitations of the Entity Framework is that in order to update or delete an entity you have to first retrieve it into memory. Now in most scenarios this is just fine. There are however some senerios where performance would suffer. Also, for single deletes, the object must be retrieved before it can be deleted requiring two calls to the database. Batch update and delete eliminates the need to retrieve and load an entity before modifying it.
+A current limitations of the Entity Framework is that in order to update or delete an entity you have to first retrieve it into memory. Now in most scenarios this is just fine. There are however some scenarios where performance would suffer. Also, for single deletes, the object must be retrieved before it can be deleted requiring two calls to the database. Batch update and delete eliminates the need to retrieve and load an entity before modifying it.
 
 **Deleting**
 
@@ -94,7 +99,7 @@ int total = q1.Value;
 var tasks = q2.ToList();    
 ```
 
-In this example, we have a common senerio where you want to page a list of tasks. In order for the GUI to setup the paging control, you need a total count. With Future, we can batch together the queries to get all the data in one database call.
+In this example, we have a common scenario where you want to page a list of tasks. In order for the GUI to setup the paging control, you need a total count. With Future, we can batch together the queries to get all the data in one database call.
 
 Future queries work by creating the appropriate IFutureQuery object that keeps the IQuerable. The IFutureQuery object is then stored in IFutureContext.FutureQueries list. Then, when one of the IFutureQuery objects is enumerated, it calls back to IFutureContext.ExecuteFutureQueries() via the LoadAction delegate. ExecuteFutureQueries builds a batch query from all the stored IFutureQuery objects. Finally, all the IFutureQuery objects are updated with the results from the query.
 

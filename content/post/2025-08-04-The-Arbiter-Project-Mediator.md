@@ -1,12 +1,12 @@
----
-layout: post
-title: "Exploring the Arbiter Project: A Modern Take on the Mediator Pattern in .NET"
-dateCreated: 2025-08-04 12:00:00 -0500
-categories: [dotnet, csharp, architecture, mediator, cqrs]
-tags: [dotnet, csharp, mediator, cqrs, clean-architecture, arbiter, vertical-slice]
-excerpt: "Discover the Arbiter project - a modern implementation of the Mediator pattern for .NET applications embracing clean architecture and CQRS principles."
-author: LoreSoft
----
++++
+title = "Exploring the Arbiter Project: A Modern Take on the Mediator Pattern in .NET"
+date = '2025-08-04T12:00:00-05:00'
+url = 'The-Arbiter-Project-Mediator'
+categories = ['Development', 'Architecture']
+tags = ['dotnet', 'csharp', 'mediator', 'cqrs', 'clean-architecture', 'arbiter', 'vertical-slice']
+author = 'LoreSoft'
+description = "Discover the Arbiter project - a modern implementation of the Mediator pattern for .NET applications embracing clean architecture and CQRS principles."
++++
 
 Discover the Arbiter project - a modern implementation of the Mediator pattern for .NET applications embracing clean architecture and CQRS principles.
 

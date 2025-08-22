@@ -1,10 +1,13 @@
----
-layout: post
-dateCreated: 4/4/2006 12:47:00 AM
-title: WilsonORMapper CodeSmith Templates
-tags:
-- CodeSmith
----
++++
+date = '2006-04-04T00:47:00-05:00'
+title = 'WilsonORMapper CodeSmith Templates'
+url = 'WilsonORMapper-CodeSmith-Templates'
+tags = ['codesmith', 'orm']
+categories = ['Tools']
+author = 'LoreSoft'
+description = 'CodeSmith templates for generating WilsonORMapper mapping files and business classes.'
++++
+
 
 The following CodeSmith templates are to generate the WilsonORMapper mapping file and to generate the business classes that can be mapped to. These templates have the following features...
 

@@ -1,10 +1,13 @@
----
-layout: post
-dateCreated: 8/6/2004 6:20:00 PM
-title: Fix for the RichTextBox Undo Information Lost When Retrieving Text
-tags:
-- Snippets
----
++++
+date = '2004-08-06T18:20:00-05:00'
+title = 'Fix for the RichTextBox Undo Information Lost When Retrieving Text'
+url = 'Fix-for-the-RichTextBox-Undo-Information-Lost-When-Retrieving-Text'
+tags = ['snippets']
+categories = ['Examples']
+author = 'LoreSoft'
+description = 'Workaround for RichTextBox undo information lost issue.'
++++
+
 
 In my work with the RichTextBox control, I've often run into this bug in the RichEdit control. You can read more about this bug by looking at Microsoft's knowledge base article - [812943](http://support.microsoft.com/default.aspx?scid=kb;en-us;812943). If you are unable to get the latest Riched20.dll then you can get around the problem using the following code …
 

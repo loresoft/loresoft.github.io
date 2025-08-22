@@ -1,13 +1,15 @@
----
-layout: post
-dateCreated: 8/13/2007 3:24:00 PM
-title: Caching the results from LinqDataSource
-tags:
-- Snippets
-- Linq
----
++++
+date = '2007-08-13T15:24:00-05:00'
+title = 'Caching the results from LinqDataSource'
+url = 'Caching-the-results-from-LinqDataSource'
+tags = ['snippets', 'linq', 'caching']
+categories = ['Examples']
+author = 'LoreSoft'
+description = 'LinqCacheDataSource class for caching LINQ query results in ASP.NET applications.'
++++
 
-I wanted to be able to cache the results of a query from the LinqDataSource that was used in multiple places on the page.&nbsp; I whipped up this little class to do the work of caching for me.&nbsp; The class, LinqCacheDataSource, handles the Selecting and Selected events.&nbsp; The Selected handler inserts the result of the query into cache.&nbsp; The Selecting handler gets the result from the cache.&nbsp; If it doesn't find the result, the query runs as normal.&nbsp; The caching will only work for selecting data.&nbsp; It works great for dropdowns and other fairly static data.
+
+I wanted to be able to cache the results of a query from the LinqDataSource that was used in multiple places on the page. I whipped up this little class to do the work of caching for me. The class, LinqCacheDataSource, handles the Selecting and Selected events. The Selected handler inserts the result of the query into cache. The Selecting handler gets the result from the cache. If it doesn't find the result, the query runs as normal. The caching will only work for selecting data. It works great for dropdowns and other fairly static data.
 
 The Code ...
 

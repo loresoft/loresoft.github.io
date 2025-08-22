@@ -1,0 +1,17 @@
+{{ define "main" }}
+<main class="container">
+  <div class="page">
+    <h1 class="page-title">{{ .Title }}</h1>
+    {{ .Content }}
+  </div>
+  <div id="github-projects"
+       class="list-group"></div>
+</main>
+{{ end }}
+
+{{ define "scripts" }}
+<script src="https://cdn.jsdelivr.net/npm/luxon@3.7.1/build/global/luxon.min.js"
+        integrity="sha256-i/BhQXhJCFXhQ5heCQS1ifMRKi5mqCb6rk4mvWJNU0U="
+        crossorigin="anonymous"></script>
+<script src="/js/github-projects.js"></script>
+{{ end }}

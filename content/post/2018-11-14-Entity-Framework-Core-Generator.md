@@ -1,28 +1,29 @@
----
-layout: post
-dateCreated: 11/14/2018 12:00:00 PM
-title: Entity Framework Core Generator - Generating a model from an existing database
-tags:
-- Entity Framework
-- EntityFramework
-- EntityFrameworkCore
----
++++
+date = '2018-11-14T12:00:00-06:00'
+title = 'Entity Framework Core Generator - Generating a model from an existing database'
+url = 'Entity-Framework-Core-Generator'
+tags = ['entity-framework', 'entity-framework-core']
+categories = ['Tools']
+author = 'LoreSoft'
+description = '.NET Core CLI tool to generate Entity Framework Core model from an existing database.'
++++
+
 
 ## Overview
 
 .NET Core command-line (CLI) tool to generate Entity Framework Core model from an existing database.
 
-- NuGet: [https://nuget.org/packages/EntityFrameworkCore.Generator](https://nuget.org/packages/EntityFrameworkCore.Generator "NuGet Package")
-- Source: [http://github.com/loresoft/EntityFrameworkCore.Generator](https://github.com/loresoft/EntityFrameworkCore.Generator "Project Source")
-- Documentation: [https://efg.loresoft.com](https://efg.loresoft.com)
+* NuGet: [https://nuget.org/packages/EntityFrameworkCore.Generator](https://nuget.org/packages/EntityFrameworkCore.Generator "NuGet Package")
+* Source: [http://github.com/loresoft/EntityFrameworkCore.Generator](https://github.com/loresoft/EntityFrameworkCore.Generator "Project Source")
+* Documentation: [https://efg.loresoft.com](https://efg.loresoft.com)
   
 ## Features
 
-- Entity Framework Core database first model generation
-- Safe regeneration via region replacement
-- Safe Renaming via mapping file parsing
-- Optionally generate read, create and update models from entity
-- Optionally generate validation and object mapper classes
+* Entity Framework Core database first model generation
+* Safe regeneration via region replacement
+* Safe Renaming via mapping file parsing
+* Optionally generate read, create and update models from entity
+* Optionally generate validation and object mapper classes
 
 ## Documentation
 
@@ -134,10 +135,10 @@ In order to capture and preserve Entity, Property and DbContext renames, the `ge
 
 Entity Framework Core Generator supports the following databases.
 
-- SQL Server
-- PostgreSQL *Coming Soon*
-- MySQL *Coming Soon*
-- Sqlite *Coming Soon*
+* SQL Server
+* PostgreSQL *Coming Soon*
+* MySQL *Coming Soon*
+* Sqlite *Coming Soon*
 
 The provider can be set via command line or via the [configuration file](https://efg.loresoft.com/en/latest/configuration/).
 
@@ -161,4 +162,4 @@ The database schema is loaded from the metadata model factory implementation of 
 
 ## View Models
 
-Entity Framework Core Generator supports generating [Read](https://efg.loresoft.com/en/latest/md/read/), [Create](https://efg.loresoft.com/en/latest/md/create/) and [Update](https://efg.loresoft.com/en/latest/md/update/) view models from an entity.  Many projects rely on view models to shape data.  The model templates can be used to quickly get the basic view models created.  The model templates also support regeneration so any database change can easily be sync'd to the view models.  
+Entity Framework Core Generator supports generating [Read](https://efg.loresoft.com/en/latest/md/read/), [Create](https://efg.loresoft.com/en/latest/md/create/) and [Update](https://efg.loresoft.com/en/latest/md/update/) view models from an entity.  Many projects rely on view models to shape data.  The model templates can be used to quickly get the basic view models created.  The model templates also support regeneration so any database change can easily be sync'd to the view models.

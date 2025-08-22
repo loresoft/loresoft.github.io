@@ -1,0 +1,108 @@
+/* Base Layout */
+body {
+  padding-top: 70px;
+}
+
+/* Footer Styles */
+footer,
+#footer {
+  padding: 2.5rem 0;
+  margin-top: 3rem;
+  color: #999;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: 0.05rem solid #e5e5e5;
+}
+
+/* Content Elements */
+pre {
+  margin: 0;
+}
+
+hr {
+  opacity: 0.125;
+}
+
+/* Code Highlighting */
+.highlight {
+  border: 3px solid #f0f0f0;
+  padding: 0.5rem;
+  margin: 1rem 0;
+}
+
+/* Post Styles */
+.post-title a {
+  text-decoration: none;
+}
+
+.post-title a:hover {
+  text-decoration: underline;
+}
+
+.post-date {
+  display: block;
+  margin: -0.5rem 0 1rem;
+  color: #9a9a9a;
+}
+
+.post img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Related Posts */
+.related-posts {
+  list-style: none;
+}
+
+.related-posts h3 {
+  font-size: 1.2em;
+  margin-top: 0;
+}
+
+.related-posts li small,
+a > small,
+li small {
+  font-size: 75%;
+  color: #999;
+}
+
+.related-posts li a:hover {
+  color: #268bd2;
+  text-decoration: none;
+}
+
+.related-posts li a:hover small,
+a:hover > small {
+  color: #999;
+}
+
+/* Scroll to Top Button */
+#scroll {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  background-color: #dee2e6;
+  text-indent: -9999px;
+  display: none;
+  border-radius: 50%;
+  z-index: 999;
+}
+
+#scroll span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -12px 0 0 -8px;
+  width: 0;
+  height: 0;
+  border: 8px solid transparent;
+  border-bottom-color: #ffffff;
+}
+
+#scroll:hover {
+  background-color: #268bd2;
+}

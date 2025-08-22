@@ -1,0 +1,17 @@
+{{ define "main" }}
+{{- $pages := where site.RegularPages "Type" "post" -}}
+<main class="container">
+  <h1>{{ .Title }}</h1>
+  {{ range $pages.GroupByDate "2006" "desc" }}
+  <h4>{{ .Key }}</h2>
+    <ul>
+      {{ range .Pages }}
+      <li>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        <small class="ms-2">{{ .Date.Format "January 2, 2006" }}</small>
+      </li>
+      {{ end }}
+    </ul>
+    {{ end }}
+</main>
+{{ end }}

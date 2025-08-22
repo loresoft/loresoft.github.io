@@ -1,10 +1,13 @@
----
-layout: post
-dateCreated: 8/13/2005 7:54:00 PM
-title: Generics at Runtime
-tags:
-- Snippets
----
++++
+date = '2005-08-13T19:54:00-05:00'
+title = 'Generics at Runtime'
+url = 'Generics-at-Runtime'
+tags = ['snippets', 'dotnet', 'generics']
+categories = ['Examples']
+author = 'LoreSoft'
+description = 'Demonstration of how to use .NET Generics at runtime with reflection.'
++++
+
 
 Here is a little test code that demonstrates how to use Generics at runtime. The code has two tests. The first test shows how to create a Generic Class at runtime. The second shows how to call a Generic method. Keep in mind that when using generics at runtime, there will be a reflection performance hit.
 

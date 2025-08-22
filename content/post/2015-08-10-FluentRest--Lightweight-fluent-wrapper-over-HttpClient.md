@@ -1,19 +1,19 @@
----
-layout: post
-dateCreated: 08/10/2015 12:00:00 PM
-title: FluentRest - Lightweight fluent wrapper over HttpClient
-tags:
-- Fluent
-- HttpClient
-- Http
-- REST
----
++++
+date = '2015-08-10T12:00:00-05:00'
+title = 'FluentRest - Lightweight fluent wrapper over HttpClient'
+url = 'FluentRest--Lightweight-fluent-wrapper-over-HttpClient'
+tags = ['fluent', 'httpclient', 'http', 'rest']
+categories = ['Libraries']
+author = 'LoreSoft'
+description = 'FluentRest - Lightweight fluent wrapper over HttpClient for building REST API requests.'
++++
+
 ## Features
 
 * Fluent request building
 * Fluent form building
 * Automatic deserialization of response
-* Plugin different serialization 
+* Plugin different serialization
 * Fake HTTP responses
 
 ## Download
@@ -22,13 +22,14 @@ The FluentRest library is available on nuget.org via package name `FluentRest`.
 
 To install FluentRest, run the following command in the Package Manager Console
 
-    PM> Install-Package FluentRest
-    
+```powershell
+Install-Package FluentRest
+```
+
 * NuGet: [https://nuget.org/packages/FluentRest](https://nuget.org/packages/FluentRest "NuGet Package")
 * Source: [http://github.com/loresoft/FluentRest](https://github.com/loresoft/FluentRest "Project Source")
 
 [![NuGet Version](https://img.shields.io/nuget/v/FluentRest.svg?style=flat-square)](https://www.nuget.org/packages/FluentRest/)
-
 
 ## Fluent Request
 
@@ -111,7 +112,6 @@ var result = await client.GetAsync<Repository>(b => b
 #### FileMessageStore
 
 The file message store allows saving an HTTP call response on the first use.  You can then use that saved response for all future unit test runs.
-
 
 Configure the FluentRest to capture response.
 

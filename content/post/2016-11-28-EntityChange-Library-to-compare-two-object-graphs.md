@@ -1,12 +1,13 @@
----
-layout: post
-dateCreated: 11/28/2016 12:00:00 PM
-title: EntityChange - Library to compare two entity object graphs
-tags:
-- compare
-- change detection 
-- object graph 
----
++++
+date = '2016-11-28T12:00:00-06:00'
+title = 'EntityChange - Library to compare two entity object graphs'
+url = 'EntityChange-Library-to-compare-two-object-graphs'
+tags = ['compare', 'change-detection', 'object-graph']
+categories = ['Libraries']
+author = 'LoreSoft'
+description = 'EntityChange library for comparing two entity object graphs and detecting changes in entities, collections, and dictionaries.'
++++
+
 
 ## Overview
 
@@ -14,12 +15,12 @@ Library to compare two entity object graphs detecting changes
 
 ## Features
 
-- Compare complete entity graph including child entities, collections and dictionaries
-- Collection compare by index or element equality
-- Dictionary compare by key
-- Custom value string formatter
-- Custom entity equality compare
-- Markdown or Html change report formatter
+* Compare complete entity graph including child entities, collections and dictionaries
+* Collection compare by index or element equality
+* Dictionary compare by key
+* Custom value string formatter
+* Custom entity equality compare
+* Markdown or Html change report formatter
 
 ## Download
 
@@ -27,7 +28,9 @@ The EntityChange library is available on nuget.org via package name `EntityChang
 
 To install EntityChange, run the following command in the Package Manager Console
 
-    PM> Install-Package EntityChange
+```powershell
+Install-Package EntityChange
+```
 
 * NuGet: [https://nuget.org/packages/EntityChange](https://nuget.org/packages/EntityChange "NuGet Package")
 * Source: [http://github.com/loresoft/EntityChange](https://github.com/loresoft/EntityChange "Project Source")
@@ -78,7 +81,7 @@ var changes = comparer.Compare(original, current).ToList();
 
 Sample output from the `MarkdownFormatter`
 
-**OUTPUT** 
+**OUTPUT**
 
 * Removed `Administrator` from `Roles`
 * Changed `Email Address` from `user@Personal.com` to `user@gmail.com`
@@ -90,5 +93,3 @@ Sample output from the `MarkdownFormatter`
 * Added `Blah` to `Categories`
 * Changed `Data` from `1` to `2`
 * Changed `Data` from `./home` to `./path`
-
-

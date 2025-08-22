@@ -1,12 +1,13 @@
----
-layout: post
-title: "AspNetCore.SecurityKey - Security API Key Authentication Implementation for ASP.NET Core"
-dateCreated: 2025-08-01 12:00:00 -0500
-categories: [Development, Security]
-tags: [asp-net-core, authentication, api-key, security, nuget]
-description: "A flexible and lightweight API key authentication library for ASP.NET Core applications that supports multiple authentication patterns and integrates seamlessly with ASP.NET Core's authentication and authorization infrastructure."
-author: LoreSoft
----
++++
+title = "AspNetCore.SecurityKey - Security API Key Authentication Implementation for ASP.NET Core"
+date = '2025-08-01T12:00:00-05:00'
+url = 'AspNetCore.SecurityKey-Security-API-Key-Authentication'
+categories = ['Development', 'Security']
+tags = ['asp-net-core', 'authentication', 'api-key', 'security']
+description = "A flexible and lightweight API key authentication library for ASP.NET Core applications that supports multiple authentication patterns and integrates seamlessly with ASP.NET Core's authentication and authorization infrastructure."
+author = 'LoreSoft'
++++
+
 
 A flexible and lightweight API key authentication library for ASP.NET Core applications that supports multiple authentication patterns and integrates seamlessly with ASP.NET Core's authentication and authorization infrastructure.
 
@@ -86,7 +87,7 @@ AspNetCore.SecurityKey supports multiple ways to pass API keys in requests, prov
 
 The most common and secure approach for API-to-API communication:
 
-```http
+```text
 GET https://api.example.com/users
 Accept: application/json
 X-API-KEY: 01HSGVBSF99SK6XMJQJYF0X3WQ
@@ -96,7 +97,7 @@ X-API-KEY: 01HSGVBSF99SK6XMJQJYF0X3WQ
 
 Useful for simple integrations or when headers cannot be easily modified:
 
-```http
+```text
 GET https://api.example.com/users?X-API-KEY=01HSGVBSF99SK6XMJQJYF0X3WQ
 Accept: application/json
 ```
@@ -107,7 +108,7 @@ Accept: application/json
 
 Ideal for browser-based applications or when API keys need persistence:
 
-```http
+```text
 GET https://api.example.com/users
 Accept: application/json
 Cookie: X-API-KEY=01HSGVBSF99SK6XMJQJYF0X3WQ

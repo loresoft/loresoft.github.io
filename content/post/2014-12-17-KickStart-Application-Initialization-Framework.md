@@ -1,19 +1,22 @@
----
-layout: post
-dateCreated: 12/17/2014 12:00:00 PM
-title: KickStart - Application Initialization Framework
-tags:
-- KickStart
----
++++
+date = '2014-12-17T12:00:00-06:00'
+title = 'KickStart - Application Initialization Framework'
+url = 'KickStart-Application-Initialization-Framework'
+tags = ['kickstart', 'initialization', 'framework']
+categories = ['Libraries']
+author = 'LoreSoft'
+description = 'Application start-up helper framework for initializing IoC containers, mappings, and startup tasks.'
++++
+
 
 Application start-up helper to initialize things like an IoC container, register mapping information or run a task.
 
 ## Features
 
-- Run tasks on application start-up
-- Extension model to add library specific start up tasks
-- Common IoC container adaptor
-- Sigleton instance of an application level IoC container
+* Run tasks on application start-up
+* Extension model to add library specific start up tasks
+* Common IoC container adaptor
+* Singleton instance of an application level IoC container
 
 ## Download
 
@@ -21,14 +24,16 @@ The KickStart library is available on nuget.org via package name `KickStart`.
 
 To install KickStart, run the following command in the Package Manager Console
 
-    PM> Install-Package KickStart
-    
+```powershell
+Install-Package KickStart
+```
+
 * NuGet: [http://www.nuget.org/packages?q=KickStart](http://www.nuget.org/packages?q=KickStart "NuGet Package")
 * Source: [http://github.com/loresoft/KickStart](https://github.com/loresoft/KickStart "Project Source")
 
 ## Example
 
-This example will scan the assembly containing UserModule.  Then it will find all Autofac modules and register them with Autofac.  Then, all AutoMapper profiles will be registered with Automapper. Finally, it will find all classes that implement `IStartupTask` and run it. 
+This example will scan the assembly containing UserModule.  Then it will find all Autofac modules and register them with Autofac.  Then, all AutoMapper profiles will be registered with Automapper. Finally, it will find all classes that implement `IStartupTask` and run it.
 
 ```csharp
 Kick.Start(config => config
@@ -41,20 +46,19 @@ Kick.Start(config => config
 
 ## Extensions
 
-- StartupTask - Run any class that implements `IStartupTask`
-- Autofac - Registers all Autofac `Module` classes and creates the container
-- AutoMapper - Registers all AutoMapper `Profile` classes
-- log4net - Use log4net as a logger
-- MongoDB - Registers all `BsonClassMap` classes with MongoDB serialization
-- Ninject - Registers all `NinjectModule` classes and creates an `IKernal`
-- NLog - Use NLog as a logger
-- SimpleInjector - Run all `ISimpleInjectorRegistration` instances allowing container registration
-- Unity - Run all `IUnityRegistration` instances allowing container registration
+* StartupTask - Run any class that implements `IStartupTask`
+* Autofac - Registers all Autofac `Module` classes and creates the container
+* AutoMapper - Registers all AutoMapper `Profile` classes
+* log4net - Use log4net as a logger
+* MongoDB - Registers all `BsonClassMap` classes with MongoDB serialization
+* Ninject - Registers all `NinjectModule` classes and creates an `IKernal`
+* NLog - Use NLog as a logger
+* SimpleInjector - Run all `ISimpleInjectorRegistration` instances allowing container registration
+* Unity - Run all `IUnityRegistration` instances allowing container registration
 
 ### StartupTask
 
 The StartupTask extension allows running code on application start-up. To use this extension, implement the `IStartupTask` interface. Use the `Priority` property to control the order of execution.
-
 
 Basic usage
 
@@ -103,12 +107,13 @@ Kick.Start(c => c
 );
 ```
 
-
 To install Autofac extension, run the following command in the Package Manager Console
 
-    PM> Install-Package KickStart.Autofac
+```powershell
+Install-Package KickStart.Autofac
+```
 
-### SimpleInjector 
+### SimpleInjector
 
 The SimpleInjector extension allows registration of types to be resolved by running all instances of `ISimpleInjectorRegistration`.  The extension also creates a default container and sets it to the `Kick.Container` singleton for access later.
 
@@ -123,9 +128,11 @@ Kick.Start(config => config
 
 To install SimpleInjector extension, run the following command in the Package Manager Console
 
-    PM> Install-Package KickStart.SimpleInjector
+```powershell
+Install-Package KickStart.SimpleInjector
+```
 
-### Unity 
+### Unity
 
 The Unity extension allows registration of types to be resolved by running all instances of `IUnityRegistration`.  The extension also creates a default container and sets it to the `Kick.Container` singleton for access later.
 
@@ -140,7 +147,9 @@ Kick.Start(config => config
 
 To install Unity extension, run the following command in the Package Manager Console
 
-    PM> Install-Package KickStart.Unity
+```powershell
+Install-Package KickStart.Unity
+```
 
 ### NLog
 
@@ -176,4 +185,6 @@ Kick.Start(c => c
 
 To install NLog extension, run the following command in the Package Manager Console
 
-    PM> Install-Package KickStart.NLog
+```powershell
+Install-Package KickStart.NLog
+```

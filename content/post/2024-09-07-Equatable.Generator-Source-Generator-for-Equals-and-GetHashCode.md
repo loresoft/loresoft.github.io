@@ -1,25 +1,27 @@
----
-layout: post
-dateCreated: 09/07/2024 12:00:00 PM
-title: Equatable.Generator - Source generator for Equals and GetHashCode
-tags:
-- Source Generator
----
-# Equatable.Generator
++++
+date = '2024-09-07T12:00:00-05:00'
+title = 'Equatable.Generator - Source generator for Equals and GetHashCode'
+url = 'Equatable.Generator-Source-Generator-for-Equals-and-GetHashCode'
+categories = ['Development', 'Tools']
+tags = ['equals', 'gethashcode', 'source-generator', 'csharp', 'dotnet']
+description = "A source generator for Equals and GetHashCode that supports class, record, and struct types with various comparers."
+author = 'LoreSoft'
++++
+
 
 Source generator for `Equals` and `GetHashCode`
 
-- <https://github.com/loresoft/Equatable.Generator>
-- <https://www.nuget.org/packages/Equatable.Generator>
+* <https://github.com/loresoft/Equatable.Generator>
+* <https://www.nuget.org/packages/Equatable.Generator>
 
 ## Features
 
-- Override `Equals` and `GetHashCode`
-- Implement `IEquatable<T>`
-- Support `class`, `record` and `struct` types
-- Support `EqualityComparer` per property
-- Comparers supported: String, Sequence, Dictionary, HashSet, Reference, and Custom
-- No dependencies
+* Override `Equals` and `GetHashCode`
+* Implement `IEquatable<T>`
+* Support `class`, `record` and `struct` types
+* Support `EqualityComparer` per property
+* Comparers supported: String, Sequence, Dictionary, HashSet, Reference, and Custom
+* No dependencies
 
 ### Usage
 
@@ -39,24 +41,24 @@ Prevent including Equatable.Generator as a dependency
 
 This library requires:
 
-- Target framework .NET Standard 2.0 or greater
-- Project C# `LangVersion` 8.0 or higher
+* Target framework .NET Standard 2.0 or greater
+* Project C# `LangVersion` 8.0 or higher
 
 ### Equatable Attributes
 
 Place equatable attribute on a `class`, `record` or `struct`.  The source generator will create a partial with overrides for `Equals` and `GetHashCode`.
 
-- `[Equatable]` Marks the class to generate overrides for `Equals` and `GetHashCode`
+* `[Equatable]` Marks the class to generate overrides for `Equals` and `GetHashCode`
 
  The default comparer used in the implementation of `Equals` and `GetHashCode` is `EqualityComparer<T>.Default`.  Customize the comparer used with the following attributes.
 
-- `[IgnoreEquality]` Ignore property in `Equals` and `GetHashCode` implementations
-- `[StringEquality]` Use specified `StringComparer` when comparing strings
-- `[SequenceEquality]` Use `Enumerable.SequenceEqual` to determine whether enumerables are equal
-- `[DictionaryEquality]` Use to determine if dictionaries are equal
-- `[HashSetEquality]` Use `ISet<T>.SetEquals` to determine whether enumerables are equal
-- `[ReferenceEquality]` Use `Object.ReferenceEquals` to determines whether instances are the same instance
-- `[EqualityComparer]` Use the specified `EqualityComparer`
+* `[IgnoreEquality]` Ignore property in `Equals` and `GetHashCode` implementations
+* `[StringEquality]` Use specified `StringComparer` when comparing strings
+* `[SequenceEquality]` Use `Enumerable.SequenceEqual` to determine whether enumerables are equal
+* `[DictionaryEquality]` Use to determine if dictionaries are equal
+* `[HashSetEquality]` Use `ISet<T>.SetEquals` to determine whether enumerables are equal
+* `[ReferenceEquality]` Use `Object.ReferenceEquals` to determines whether instances are the same instance
+* `[EqualityComparer]` Use the specified `EqualityComparer`
 
 ### Example Usage
 

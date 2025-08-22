@@ -1,10 +1,13 @@
----
-layout: post
-dateCreated: 07/23/2014 12:00:00 PM
-title: NLog Fluent Library
-tags:
-- NLog
----
++++
+date = '2014-07-23T12:00:00-05:00'
+title = 'NLog Fluent Library'
+url = 'NLog-Fluent-Library'
+tags = ['nlog', 'fluent-api', 'logging']
+categories = ['Libraries']
+author = 'LoreSoft'
+description = 'NLog.Fluent library providing a fluent API for NLog logging framework.'
++++
+
 
 Fluent API for NLog
 
@@ -14,9 +17,10 @@ The NLog.Fluent library is available on nuget.org via package name `NLog.Fluent`
 
 To install NLog.Fluent, run the following command in the Package Manager Console
 
-    PM> Install-Package NLog.Fluent
+```powershell
+Install-Package NLog.Fluent
+```
 
-    
 * NuGet: [http://www.nuget.org/packages/NLog.Fluent](http://www.nuget.org/packages/NLog.Fluent "NuGet Package")
 * Source: [http://github.com/loresoft/NLog.Fluent](https://github.com/loresoft/NLog.Fluent "Project Source")
 

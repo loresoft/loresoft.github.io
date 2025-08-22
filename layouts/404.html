@@ -1,0 +1,165 @@
+{{ define "main" }}
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-8 text-center">
+      <div class="error-page">
+        <h1 class="error-title">404</h1>
+        <h2 class="error-subtitle">Page Not Found</h2>
+        <p class="error-message">
+          Oops! The page you're looking for doesn't exist. It might have been moved, deleted, or you entered the wrong URL.
+        </p>
+
+        <div class="error-actions mt-4">
+          <a href="{{ .Site.BaseURL }}" class="btn btn-primary me-3">
+            <i class="bi bi-house"></i> Go Home
+          </a>
+          <a href="/archive" class="btn btn-outline-secondary">
+            <i class="bi bi-archive"></i> Browse Posts
+          </a>
+        </div>
+
+        <div class="search-suggestion mt-5">
+          <h4>Looking for something specific?</h4>
+          <p>Try searching for what you need:</p>
+          <div class="search-box mt-3">
+            <input type="text" id="search-input" class="form-control" placeholder="Search posts...">
+            <button id="search-btn" class="btn btn-outline-primary mt-2">Search</button>
+          </div>
+        </div>
+
+        <div class="popular-posts mt-5">
+          <h4>Popular Posts</h4>
+          <ul class="list-unstyled">
+            <li><a href="/post/2015-08-10-fluentrest--lightweight-fluent-wrapper-over-httpclient/">FluentRest - Lightweight fluent wrapper over HttpClient</a></li>
+            <li><a href="/post/2015-03-25-estimatorx-project-estimation-application/">EstimatorX Project Estimation Application</a></li>
+            <li><a href="/post/2015-02-03-fluentcommand-fluent-wrapper-for-dbcommand/">FluentCommand Fluent Wrapper for DbCommand</a></li>
+            <li><a href="/post/2014-12-17-kickstart-application-initialization-framework/">KickStart Application Initialization Framework</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+.error-page {
+  padding: 50px 0;
+}
+
+.error-title {
+  font-size: 8rem;
+  font-weight: 700;
+  color: #6c757d;
+  margin-bottom: 0;
+  line-height: 1;
+}
+
+.error-subtitle {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: #495057;
+  margin-bottom: 1rem;
+}
+
+.error-message {
+  font-size: 1.1rem;
+  color: #6c757d;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.error-actions .btn {
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.search-suggestion {
+  background-color: #f8f9fa;
+  padding: 30px;
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+}
+
+.search-box {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.popular-posts {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+}
+
+.popular-posts ul li {
+  padding: 8px 0;
+  border-bottom: 1px solid #f1f3f4;
+}
+
+.popular-posts ul li:last-child {
+  border-bottom: none;
+}
+
+.popular-posts ul li a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.popular-posts ul li a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .error-title {
+    font-size: 6rem;
+  }
+
+  .error-subtitle {
+    font-size: 2rem;
+  }
+
+  .error-actions .btn {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .search-suggestion, .popular-posts {
+    padding: 20px;
+    margin-top: 30px;
+  }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const searchInput = document.getElementById('search-input');
+  const searchBtn = document.getElementById('search-btn');
+
+  function performSearch() {
+    const query = searchInput.value.trim();
+    if (query) {
+      // You can implement search functionality here
+      // For now, redirect to Google site search
+      window.open(`https://www.google.com/search?q=site:{{ .Site.BaseURL | strings.TrimSuffix "/" }} ${encodeURIComponent(query)}`, '_blank');
+    }
+  }
+
+  searchBtn.addEventListener('click', performSearch);
+
+  searchInput.addEventListener('keypress', function(e) {
+    if (e.key === 'Enter') {
+      performSearch();
+    }
+  });
+});
+</script>
+{{ end }}

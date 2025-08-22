@@ -1,10 +1,13 @@
----
-layout: post
-dateCreated: 02/03/2015 12:00:00 PM
-title: FluentCommand - Fluent Wrapper for DbCommand
-tags:
-- DbCommand
----
++++
+date = '2015-02-03T12:00:00-06:00'
+title = 'FluentCommand - Fluent Wrapper for DbCommand'
+url = 'FluentCommand-Fluent-Wrapper-for-DbCommand'
+tags = ['dbcommand', 'fluent-api', 'database']
+categories = ['Libraries']
+author = 'LoreSoft'
+description = 'FluentCommand library providing a fluent wrapper for DbCommand database operations.'
++++
+
 
 Fluent Wrapper for DbCommand
 
@@ -14,26 +17,26 @@ The FluentCommand library is available on nuget.org via package name `FluentComm
 
 To install FluentCommand, run the following command in the Package Manager Console
 
-    PM> Install-Package FluentCommand
-    
+```powershell
+Install-Package FluentCommand
+```
+
 * NuGet: [https://nuget.org/packages/FluentCommand](https://nuget.org/packages/FluentCommand "NuGet Package")
 * Source: [http://github.com/loresoft/FluentCommand](https://github.com/loresoft/FluentCommand "Project Source")
 
 ## Features
 
-- Fluent wrapper over DbConnection and DbCommand
-- Callback for parameter return values
-- Automatic handling of connection state
-- Caching of results
-- Automatic creating of entity from DataReader
-- Create Dynamic objects from DataReader
-- Handles multiple result sets
-
+* Fluent wrapper over DbConnection and DbCommand
+* Callback for parameter return values
+* Automatic handling of connection state
+* Caching of results
+* Automatic creating of entity from DataReader
+* Create Dynamic objects from DataReader
+* Handles multiple result sets
 
 ## Example
 
-Query all users with email domain.  Entity is automaticly created from DataReader.
-
+Query all users with email domain.  Entity is automatically created from DataReader.
 
 ```csharp
 string email = "%@battlestar.com";
@@ -50,7 +53,6 @@ using (var session = new DataSession("Tracker").Log(Console.WriteLine))
 ```
 
 Execute a stored procedure with out parameters
-
 
 ```csharp
 Guid userId = Guid.Empty;
@@ -81,7 +83,6 @@ using (var session = new DataSession("AspNet").Log(Console.WriteLine))
 ```
 
 Query for user by email address.  Also return Role and Status entities.
-
 
 ```csharp
 string email = "kara.thrace@battlestar.com";

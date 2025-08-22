@@ -1,0 +1,28 @@
+baseURL = 'https://loresoft.com/'
+languageCode = 'en-us'
+title = 'LoreSoft.com'
+
+# Enable alias redirects and 404 page
+enableGitInfo = true
+disableAliases = false
+
+[params]
+  description = "LoreSoft.com - Software Development and Technology Blog featuring .NET, C#, web development, and programming tutorials"
+  keywords = "software development, programming, technology, .NET, C#, web development, ASP.NET, Entity Framework, LINQ"
+  author = "Paul Welter"
+  defaultImage = "/logo/loresoft-logo.png"
+  # twitterSite = "@loresoft"
+  # twitterCreator = "@yourusername"
+
+[markup]
+  [markup.highlight]
+    style = 'github'
+    lineNos = false
+
+[services]
+  [services.disqus]
+    shortname = 'loresoft'
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'

@@ -1,13 +1,13 @@
----
-layout: post
-dateCreated: 08/27/2019 12:00:00 PM
-title: Blazor Typeahead Control
-tags:
-- Blazor
-- Typeahead
-- AutoComplete
-- ASP.NET Core
----
++++
+date = '2019-08-27T12:00:00-05:00'
+title = 'Blazor Typeahead Control'
+url = 'Blazor-Typeahead-Control'
+categories = ['Development']
+tags = ['blazor', 'typeahead', 'controls', 'csharp', 'dotnet']
+description = "A Blazor Typeahead control as part of the LoreSoft Blazor Controls project, providing user-friendly components for modern web applications."
+author = 'LoreSoft'
++++
+
 
 ## Overview
 

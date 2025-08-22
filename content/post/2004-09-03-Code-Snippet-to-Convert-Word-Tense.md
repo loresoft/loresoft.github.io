@@ -1,10 +1,13 @@
----
-layout: post
-dateCreated: 9/3/2004 1:18:00 PM
-title: Code Snippet to Convert Word Tense
-tags:
-- Snippets
----
++++
+date = '2004-09-03T13:18:00-05:00'
+title = 'Code Snippet to Convert Word Tense'
+url = 'Code-Snippet-to-Convert-Word-Tense'
+tags = ['snippets']
+categories = ['Examples']
+author = 'LoreSoft'
+description = 'Code snippet to convert word tense using regular expressions.'
++++
+
 
 Here is a useful code snippet to convert the tense of a word from single to plural and vise versa. The code uses a series of regular expression to examine the word and convert it using the correct grammar.
 
@@ -47,5 +50,3 @@ public string MakeSingle(string name)
     return name;  
 }
 ```
-
-

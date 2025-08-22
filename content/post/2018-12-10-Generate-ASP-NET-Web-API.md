@@ -1,22 +1,21 @@
----
-layout: post
-dateCreated: 12/10/2018 12:00:00 PM
-title: Generate ASP.NET Core WebAPI model with Entity Framework Core Generator
-tags:
-- Entity Framework
-- EntityFramework
-- EntityFrameworkCore
-- ASP.NET
-- WebAPI
----
++++
+date = '2018-12-10T12:00:00-06:00'
+title = 'Generate ASP.NET Core WebAPI model with Entity Framework Core Generator'
+url = 'Generate-ASP-NET-Web-API'
+tags = ['entity-framework', 'asp-net-core', 'webapi']
+categories = ['Tutorials']
+author = 'LoreSoft'
+description = 'Tutorial on using Entity Framework Core Generator to create an EF Core data model for ASP.NET WebAPI.'
++++
+
 
 ## Overview
 
 In this tutorial, you'll learn how to use the [Entity Framework Core Generator](https://github.com/loresoft/EntityFrameworkCore.Generator) to create an Entity Framework Core data model for an ASP.NET WebAPI.  Entity Framework Core Generator (efg) is .NET Core command-line (CLI) tool to generate Entity Framework Core model from an existing database.
 
-- NuGet: [https://nuget.org/packages/EntityFrameworkCore.Generator](https://nuget.org/packages/EntityFrameworkCore.Generator "NuGet Package")
-- Source: [http://github.com/loresoft/EntityFrameworkCore.Generator](https://github.com/loresoft/EntityFrameworkCore.Generator "Project Source")
-- Documentation: [https://efg.loresoft.com](https://efg.loresoft.com)
+* NuGet: [https://nuget.org/packages/EntityFrameworkCore.Generator](https://nuget.org/packages/EntityFrameworkCore.Generator "NuGet Package")
+* Source: [http://github.com/loresoft/EntityFrameworkCore.Generator](https://github.com/loresoft/EntityFrameworkCore.Generator "Project Source")
+* Documentation: [https://efg.loresoft.com](https://efg.loresoft.com)
 
 The code for this tutorial is available at <https://github.com/pwelter34/EntityFrameworkCore.Generator.Demo>
 
@@ -24,7 +23,7 @@ The code for this tutorial is available at <https://github.com/pwelter34/EntityF
 
 This tutorial will be a database first model.  The database is a simple task tracking database.  
 
-![Tracker Schema Diagram](/assets/TrackerDiagram.png)
+![Tracker Schema Diagram](/images/TrackerDiagram.png)
 
 The DDL script can be downloaded [here](https://github.com/pwelter34/EntityFrameworkCore.Generator.Demo/blob/master/database/Tracker.sql).  To create the database on your local SQL Server, run the following command.
 
@@ -49,7 +48,7 @@ dotnet add package FluentValidation.AspNetCore
 dotnet add package Swashbuckle.AspNetCore
 ```
 
-![Tracker Project](/assets/TrackerProject-New.png)
+![Tracker Project](/images/TrackerProject-New.png)
 
 ## Entity Framework Core Generator
 
@@ -77,54 +76,54 @@ The following is the yaml file created by default
 
 ```yaml
 project:
-  namespace: '{Database.Name}'
-  directory: .\
+    namespace: '{Database.Name}'
+    directory: .\
 database:
-  connectionName: ConnectionStrings:Tracker
-  userSecretsId: 984ef0cf-2b22-4fd1-876d-e01499da4c1f
+    connectionName: ConnectionStrings:Tracker
+    userSecretsId: 984ef0cf-2b22-4fd1-876d-e01499da4c1f
 data:
-  context:
-    name: '{Database.Name}Context'
-    baseClass: DbContext
-    namespace: '{Project.Namespace}.Data'
-    directory: '{Project.Directory}\Data'
-  entity:
-    namespace: '{Project.Namespace}.Data.Entities'
-    directory: '{Project.Directory}\Data\Entities'
-  mapping:
-    namespace: '{Project.Namespace}.Data.Mapping'
-    directory: '{Project.Directory}\Data\Mapping'
-  query:
-    generate: true
-    indexPrefix: By
-    uniquePrefix: GetBy
-    namespace: '{Project.Namespace}.Data.Queries'
-    directory: '{Project.Directory}\Data\Queries'
+    context:
+        name: '{Database.Name}Context'
+        baseClass: DbContext
+        namespace: '{Project.Namespace}.Data'
+        directory: '{Project.Directory}\Data'
+    entity:
+        namespace: '{Project.Namespace}.Data.Entities'
+        directory: '{Project.Directory}\Data\Entities'
+    mapping:
+        namespace: '{Project.Namespace}.Data.Mapping'
+        directory: '{Project.Directory}\Data\Mapping'
+    query:
+        generate: true
+        indexPrefix: By
+        uniquePrefix: GetBy
+        namespace: '{Project.Namespace}.Data.Queries'
+        directory: '{Project.Directory}\Data\Queries'
 model:
-  shared:
-    namespace: '{Project.Namespace}.Domain.Models'
-    directory: '{Project.Directory}\Domain\Models'
-  read:
-    generate: true
-    name: '{Entity.Name}ReadModel'
-  create:
-    generate: true
-    name: '{Entity.Name}CreateModel'
-  update:
-    generate: true
-    name: '{Entity.Name}UpdateModel'
-  mapper:
-    generate: true
-    name: '{Entity.Name}Profile'
-    baseClass: AutoMapper.Profile
-    namespace: '{Project.Namespace}.Domain.Mapping'
-    directory: '{Project.Directory}\Domain\Mapping'
-  validator:
-    generate: true
-    name: '{Model.Name}Validator'
-    baseClass: AbstractValidator<{Model.Name}>
-    namespace: '{Project.Namespace}.Domain.Validation'
-    directory: '{Project.Directory}\Domain\Validation'
+    shared:
+        namespace: '{Project.Namespace}.Domain.Models'
+        directory: '{Project.Directory}\Domain\Models'
+    read:
+        generate: true
+        name: '{Entity.Name}ReadModel'
+    create:
+        generate: true
+        name: '{Entity.Name}CreateModel'
+    update:
+        generate: true
+        name: '{Entity.Name}UpdateModel'
+    mapper:
+        generate: true
+        name: '{Entity.Name}Profile'
+        baseClass: AutoMapper.Profile
+        namespace: '{Project.Namespace}.Domain.Mapping'
+        directory: '{Project.Directory}\Domain\Mapping'
+    validator:
+        generate: true
+        name: '{Model.Name}Validator'
+        baseClass: AbstractValidator<{Model.Name}>
+        namespace: '{Project.Namespace}.Domain.Validation'
+        directory: '{Project.Directory}\Domain\Validation'
 ```
 
 ## Generate Entity Framework Core Model
@@ -135,7 +134,7 @@ In order to use Entity Framework Core, you need a DbContext, entity classes and 
 efg generate
 ```
 
-![Tracker Project](/assets/TrackerProject-After.png)
+![Tracker Project](/images/TrackerProject-After.png)
 
 ### Generation Output
 
@@ -165,7 +164,7 @@ Entity Framework Core Generator supports safe regeneration via region replacemen
 
 The code generator makes its best attempt to convert names to there plural form using the `Humanizer` library.  In some cases it fails.  The first cleanup to do is to rename the TrackerContext.TaskExtendeds property to TrackerContext.TaskExtended.
 
-![Rename Refactor](/assets/TrackerContext-Rename.png)
+![Rename Refactor](/images/TrackerContext-Rename.png)
 
 When the `generate` command is re-run, this refactor will be saved.
 
@@ -175,7 +174,7 @@ In order to handle entities in a generic way, we'll need to add some interfaces 
 
 Interface definition
 
-```c#
+```csharp
 namespace Tracker.Definitions
 {
     public interface IHaveIdentifier
@@ -187,7 +186,7 @@ namespace Tracker.Definitions
 
 Add the interface to all entities that have an Id primary key.  Below is an example entity class with the interface added.
 
-```c#
+```csharp
 public partial class Priority : IHaveIdentifier
 {
     public Priority()
@@ -237,7 +236,7 @@ You'll need to add a few more things to your Web API project to get things going
 
 You'll need to change the application startup to register the Entity Framework context as well as register the AutoMapper profiles.
 
-```c#
+```csharp
 using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -314,7 +313,7 @@ namespace Tracker
 
 To make the basic read, create and update endpoints easier, create a base controller class like the following.
 
-```c#
+```csharp
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -454,7 +453,7 @@ namespace Tracker.Controllers
 
 Create a TaskController to Create, Update, Read and Delete tasks.
 
-```c#
+```csharp
 using System;
 using System.Collections.Generic;
 using System.Threading;
@@ -526,10 +525,10 @@ namespace Tracker.Controllers
 
 You can use the Swagger UI to test the end points
 
-![Swagger Task Post Request](/assets/Tracker-TaskPost-Request.png)
+![Swagger Task Post Request](/images/Tracker-TaskPost-Request.png)
 
-![Swagger Task Post Response](/assets/Tracker-TaskPost-Response.png)
+![Swagger Task Post Response](/images/Tracker-TaskPost-Response.png)
 
 ## Database Change / Regenerate
 
-Now that you have the basic Web API project setup, you can run `efg generate` after any database change to keep all your entity and view models in sync with the database.  
+Now that you have the basic Web API project setup, you can run `efg generate` after any database change to keep all your entity and view models in sync with the database.

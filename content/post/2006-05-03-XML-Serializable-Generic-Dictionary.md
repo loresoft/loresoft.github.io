@@ -1,12 +1,15 @@
----
-layout: post
-dateCreated: 5/3/2006 12:13:00 PM
-title: XML Serializable Generic Dictionary
-tags:
-- Snippets
----
++++
+date = '2006-05-03T12:13:00-05:00'
+title = 'XML Serializable Generic Dictionary'
+url = 'XML-Serializable-Generic-Dictionary'
+tags = ['snippets', 'xml', 'serialization']
+categories = ['Examples']
+author = 'LoreSoft'
+description = 'XML serializable generic dictionary implementation using IXmlSerializable interface.'
++++
 
-For some reason, the generic Dictionary in .net 2.0 is not XML serializable. The following code snippet is a xml serializable generic dictionary. The dictionary is serialzable by implementing the IXmlSerializable interface.
+
+For some reason, the generic Dictionary in .net 2.0 is not XML serializable. The following code snippet is a xml serializable generic dictionary. The dictionary is serializable by implementing the IXmlSerializable interface.
 
 ```csharp
 using System.Collections.Generic;

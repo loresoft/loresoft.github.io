@@ -1,12 +1,13 @@
----
-layout: post
-dateCreated: 12/5/2005 12:27:00 PM
-title: Sample build file using MSBuild Community Tasks
-tags:
-- Projects > MSBuild Tasks
-redirect_from:
-- "/projects/msbuildtasks/sample-build-file-using-msbuild-community-tasks/default.aspx/index.html"
----
++++
+date = '2005-12-05T12:27:00-06:00'
+title = 'Sample build file using MSBuild Community Tasks'
+url = 'Sample-build-file-using-MSBuild-Community-Tasks'
+tags = ['msbuild', 'build']
+categories = ['Examples']
+author = 'LoreSoft'
+description = 'Sample build project demonstrating the use of MSBuild Community Tasks for creating releases.'
++++
+
 
 The [MSBuild Community Tasks Project](http://msbuildtasks.tigris.org/) has released the first version of tasks. The following is a sample build project that uses the SvnVersion, AssemblyInfo, NDoc and Zip tasks to create a release.
 

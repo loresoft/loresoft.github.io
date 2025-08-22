@@ -1,10 +1,12 @@
----
-layout: post
-dateCreated: 2/8/2006 1:38:00 AM
-title: Create a Relative path code snippet
-tags:
-- Snippets
----
++++
+date = '2006-02-08T01:38:00-06:00'
+title = 'Create a Relative path code snippet'
+url = 'Create-a-Relative-path-code-snippet'
+tags = ['snippets', 'file-system']
+categories = ['Examples']
+author = 'LoreSoft'
+description = 'C# code snippet equivalent to the Windows API PathRelativePathTo for creating relative paths.'
++++
 
 Here is a code snippet that is equivalent to the windows API PathRelativePathTo as native c#. The function creates a relative path from one file or folder to another.
 

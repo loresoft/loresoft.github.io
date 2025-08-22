@@ -1,26 +1,26 @@
----
-layout: post
-dateCreated: 11/01/2022 12:00:00 PM
-title: Injectio - Source Generator for Dependency Injection
-tags:
-- Source Generator
-- Dependency Injection
-- ASP.NET Core
----
-# Injectio
++++
+title = 'Injectio - Source Generator for Dependency Injection'
+url = 'Injectio-Source-Generator-for-Dependency-Injection'
+date = '2022-11-01T12:00:00-05:00'
+categories = ['Development', 'Tools']
+tags = ['dependency-injection', 'source-generator', 'csharp', 'dotnet']
+description = "A source generator that simplifies service registration in the dependency injection container with various strategies."
+author = 'LoreSoft'
++++
+
 
 Source generator that helps register discovered services in the dependency injection container
 
-- <https://github.com/loresoft/Injectio>
-- <https://www.nuget.org/packages/Injectio>
+* <https://github.com/loresoft/Injectio>
+* <https://www.nuget.org/packages/Injectio>
 
 ## Features
 
-- Transient, Singleton, Scoped service registration
-- Factory registration
-- Module method registration
-- Duplicate Strategy - Skip,Replace,Append
-- Registration Strategy - Self, Implemented Interfaces, Self With Interfaces
+* Transient, Singleton, Scoped service registration
+* Factory registration
+* Module method registration
+* Duplicate Strategy - Skip,Replace,Append
+* Registration Strategy - Self, Implemented Interfaces, Self With Interfaces
 
 ### Usage
 
@@ -40,25 +40,25 @@ Prevent dependances from including Injectio
 
 Place registration attribute on class.  The class will be discovered and registered.
 
-- `[RegisterSingleton]` Marks the class as a singleton service
-- `[RegisterScoped]` Marks the class as a scoped service
-- `[RegisterTransient]` Marks the class as a transient service
-- `[RegisterServices]` Marks the method to be called to register services
+* `[RegisterSingleton]` Marks the class as a singleton service
+* `[RegisterScoped]` Marks the class as a scoped service
+* `[RegisterTransient]` Marks the class as a transient service
+* `[RegisterServices]` Marks the method to be called to register services
 
 #### Attribute Properties
 
-| Property           | Description                                                                                         |
-|--------------------|-----------------------------------------------------------------------------------------------------|
-| ImplementationType | The type that implements the service.  If not set, the class the interface is on will be used.      |
-| ServiceType        | The type of the service. If not set, the Registration property used to determine what is registered.|
-| Factory            | Name of a factory method to create new instances of the service implementation.                     |
-| Duplicate          | How the generator handles duplicate registrations. See Duplicate Strategy                           |
-| Registration       | How the generator determines what to register. See Registration Strategy                            |
+| Property           | Description                                                                                          |
+| ------------------ | ---------------------------------------------------------------------------------------------------- |
+| ImplementationType | The type that implements the service.  If not set, the class the interface is on will be used.       |
+| ServiceType        | The type of the service. If not set, the Registration property used to determine what is registered. |
+| Factory            | Name of a factory method to create new instances of the service implementation.                      |
+| Duplicate          | How the generator handles duplicate registrations. See Duplicate Strategy                            |
+| Registration       | How the generator determines what to register. See Registration Strategy                             |
 
 #### Duplicate Strategy
 
 | Value   | Description                                          |
-|---------|------------------------------------------------------|
+| ------- | ---------------------------------------------------- |
 | Skip    | Skips registrations for services that already exists |
 | Replace | Replaces existing service registrations              |
 | Append  | Appends a new registration for existing services     |
@@ -66,7 +66,7 @@ Place registration attribute on class.  The class will be discovered and registe
 #### Registration Strategy
 
 | Value                 | Description                                                                           |
-|-----------------------|---------------------------------------------------------------------------------------|
+| --------------------- | ------------------------------------------------------------------------------------- |
 | Self                  | Registers each matching concrete type as itself                                       |
 | ImplementedInterfaces | Registers each matching concrete type as all of its implemented interfaces            |
 | SelfWithInterfaces    | Registers each matching concrete type as all of its implemented interfaces and itself |

@@ -1,10 +1,12 @@
----
-layout: post
-dateCreated: 11/21/2005 5:29:00 PM
-title: MSBuild Community Task Collaboration Project
-tags:
-- MSBuild
----
++++
+date = '2005-11-21T17:29:00-06:00'
+title = 'MSBuild Community Task Collaboration Project'
+url = 'MSBuild-Community-Task-Collaboration-Project'
+tags = ['msbuild', 'open-source']
+categories = ['Projects']
+author = 'LoreSoft'
+description = 'Announcement of the MSBuild Community Task Collaboration Project for sharing MSBuild tasks.'
++++
 
 I'd like to announce the MSBuild Community Task Collaboration Project. The project was started by me to form a directory of MSBuild Tasks for use in your build scripts. The project is also an open source collection of tasks. The project is broke into 2 web sites.
 

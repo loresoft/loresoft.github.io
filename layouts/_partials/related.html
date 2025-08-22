@@ -1,0 +1,15 @@
+{{ with site.RegularPages.Related . | first 5 }}
+<hr />
+<h2>Related Posts</h2>
+<ul class="related-posts">
+  {{ range . }}
+  <li>
+    <h3>
+      <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+      <small class="ms-2">{{ .Date.Format "January 2, 2006" }}</small>
+    </h3>
+  </li>
+  {{ end }}
+</ul>
+<hr />
+{{ end }}
