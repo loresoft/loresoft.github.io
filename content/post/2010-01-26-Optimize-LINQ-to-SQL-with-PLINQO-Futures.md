@@ -1,10 +1,11 @@
 +++
 date = '2010-01-26T08:49:00-06:00'
 title = 'Optimize LINQ to SQL with PLINQO Futures'
-url = 'Optimize-LINQ-to-SQL-with-PLINQO-Futures'
+slug = 'optimize-linq-to-sql-with-plinqo-futures'
 tags = ['plinqo', 'linq', 'performance']
 categories = ['Development']
 author = 'Paul Welter'
+aliases = ['/Optimize-LINQ-to-SQL-with-PLINQO-Futures']
 description = 'PLINQO future queries for batching deferred queries and optimizing database round trips.'
 +++
 

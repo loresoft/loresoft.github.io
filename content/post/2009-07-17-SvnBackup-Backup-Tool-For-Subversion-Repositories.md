@@ -1,10 +1,11 @@
 +++
 date = '2009-07-17T16:24:00-05:00'
 title = 'SvnBackup - Backup Tool For Subversion Repositories'
-url = 'SvnBackup-Backup-Tool-For-Subversion-Repositories'
+slug = 'svnbackup-backup-tool-for-subversion-repositories'
 tags = ['svn-tools', 'subversion', 'backup']
 categories = ['Tools']
 author = 'Paul Welter'
+aliases = ['/SvnBackup-Backup-Tool-For-Subversion-Repositories']
 description = 'Automated Subversion repository backup tool using svnadmin hotcopy with revision management, backup pruning, compression support, and batch processing for multiple repositories.'
 +++
 

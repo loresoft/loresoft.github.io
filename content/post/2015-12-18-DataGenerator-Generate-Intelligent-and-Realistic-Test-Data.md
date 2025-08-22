@@ -1,10 +1,11 @@
 +++
 date = '2015-12-18T12:00:00-06:00'
 title = 'DataGenerator - Generate Intelligent and Realistic Test Data'
-url = 'DataGenerator-Generate-Intelligent-and-Realistic-Test-Data'
+slug = 'datagenerator-generate-intelligent-and-realistic-test-data'
 tags = ['test', 'data', 'generation', 'fake', 'sample']
 categories = ['Libraries']
 author = 'Paul Welter'
+aliases = ['/DataGenerator-Generate-Intelligent-and-Realistic-Test-Data']
 description = 'Intelligent test data generation library with automatic property mapping, realistic data sources for names, addresses, companies, and credit cards, plus configurable profiles and fluent API for .NET testing scenarios.'
 +++
 

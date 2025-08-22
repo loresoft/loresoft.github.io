@@ -1,10 +1,11 @@
 +++
 date = '2006-04-04T00:47:00-05:00'
 title = 'WilsonORMapper CodeSmith Templates'
-url = 'WilsonORMapper-CodeSmith-Templates'
+slug = 'wilsonormapper-codesmith-templates'
 tags = ['codesmith', 'orm']
 categories = ['Tools']
 author = 'Paul Welter'
+aliases = ['/WilsonORMapper-CodeSmith-Templates']
 description = 'CodeSmith templates for generating WilsonORMapper mapping files and business classes.'
 +++
 

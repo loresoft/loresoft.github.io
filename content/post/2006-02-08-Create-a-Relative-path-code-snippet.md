@@ -1,10 +1,11 @@
 +++
 date = '2006-02-08T01:38:00-06:00'
 title = 'Create a Relative path code snippet'
-url = 'Create-a-Relative-path-code-snippet'
+slug = 'create-a-relative-path-code-snippet'
 tags = ['snippets', 'file-system']
 categories = ['Examples']
 author = 'Paul Welter'
+aliases = ['/Create-a-Relative-path-code-snippet']
 description = 'C# code snippet equivalent to the Windows API PathRelativePathTo for creating relative paths.'
 +++
 

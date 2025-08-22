@@ -1,10 +1,11 @@
 +++
 date = '2011-11-29T12:26:00-06:00'
 title = 'Entity Framework Batch Update and Future Queries'
-url = 'Entity-Framework-Batch-Update-and-Future-Queries'
+slug = 'entity-framework-batch-update-and-future-queries'
 tags = ['entity-framework', 'batch-operations']
 categories = ['Libraries']
 author = 'Paul Welter'
+aliases = ['/Entity-Framework-Batch-Update-and-Future-Queries']
 description = 'Entity Framework Extended Library providing batch update/delete and future query functionality.'
 +++
 

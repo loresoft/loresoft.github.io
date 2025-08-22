@@ -1,10 +1,11 @@
 +++
 date = '2005-11-21T17:29:00-06:00'
 title = 'MSBuild Community Task Collaboration Project'
-url = 'MSBuild-Community-Task-Collaboration-Project'
+slug = 'msbuild-community-task-collaboration-project'
 tags = ['msbuild', 'open-source']
 categories = ['Projects']
 author = 'Paul Welter'
+aliases = ['/MSBuild-Community-Task-Collaboration-Project']
 description = 'Announcement of the MSBuild Community Task Collaboration Project for sharing MSBuild tasks.'
 +++
 

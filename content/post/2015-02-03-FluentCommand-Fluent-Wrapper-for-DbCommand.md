@@ -1,10 +1,11 @@
 +++
 date = '2015-02-03T12:00:00-06:00'
 title = 'FluentCommand - Fluent Wrapper for DbCommand'
-url = 'FluentCommand-Fluent-Wrapper-for-DbCommand'
+slug = 'fluentcommand-fluent-wrapper-for-dbcommand'
 tags = ['dbcommand', 'fluent-api', 'database']
 categories = ['Libraries']
 author = 'Paul Welter'
+aliases = ['/FluentCommand-Fluent-Wrapper-for-DbCommand']
 description = 'Fluent database access library with automatic entity mapping, parameter callbacks, connection management, result caching, and support for multiple result sets and stored procedures in .NET applications.'
 +++
 

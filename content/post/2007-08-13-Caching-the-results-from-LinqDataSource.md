@@ -1,10 +1,11 @@
 +++
 date = '2007-08-13T15:24:00-05:00'
 title = 'Caching the results from LinqDataSource'
-url = 'Caching-the-results-from-LinqDataSource'
+slug = 'caching-the-results-from-linqdatasource'
 tags = ['snippets', 'linq', 'caching']
 categories = ['Examples']
 author = 'Paul Welter'
+aliases = ['/Caching-the-results-from-LinqDataSource']
 description = 'LinqCacheDataSource class for caching LINQ query results in ASP.NET applications.'
 +++
 

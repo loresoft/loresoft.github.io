@@ -1,10 +1,11 @@
 +++
 date = '2004-03-26T00:44:00-06:00'
 title = 'How to integrate NetSpell with FreeTextBox'
-url = 'How-to-integrate-NetSpell-with-FreeTextBox'
+slug = 'how-to-integrate-netspell-with-freetextbox'
 tags = ['netspell', 'freetextbox']
 categories = ['Tutorials']
 author = 'Paul Welter'
+aliases = ['/How-to-integrate-NetSpell-with-FreeTextBox']
 description = 'Guide to integrate NetSpell with FreeTextBox.'
 +++
 

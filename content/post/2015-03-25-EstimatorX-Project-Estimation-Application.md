@@ -1,10 +1,11 @@
 +++
 date = '2015-03-25T12:00:00-05:00'
 title = 'EstimatorX - Project Estimation Application'
-url = 'EstimatorX-Project-Estimation-Application'
+slug = 'estimatorx-project-estimation-application'
 tags = ['estimatorx', 'project-management', 'estimation']
 categories = ['Applications']
 author = 'Paul Welter'
+aliases = ['/EstimatorX-Project-Estimation-Application']
 description = 'Web-based project estimation application with structured task breakdown, complexity scaling, contingency planning, assumptions tracking, reusable templates, and collaborative organization features for accurate project planning.'
 +++
 

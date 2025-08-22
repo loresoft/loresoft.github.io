@@ -1,10 +1,11 @@
 +++
 date = '2005-08-13T19:54:00-05:00'
 title = 'Generics at Runtime'
-url = 'Generics-at-Runtime'
+slug = 'generics-at-runtime'
 tags = ['snippets', 'dotnet', 'generics']
 categories = ['Examples']
 author = 'Paul Welter'
+aliases = ['/Generics-at-Runtime']
 description = 'Demonstration of how to use .NET Generics at runtime with reflection.'
 +++
 

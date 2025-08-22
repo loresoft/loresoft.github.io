@@ -1,10 +1,11 @@
 +++
 date = '2005-12-05T12:27:00-06:00'
 title = 'Sample build file using MSBuild Community Tasks'
-url = 'Sample-build-file-using-MSBuild-Community-Tasks'
+slug = 'sample-build-file-using-msbuild-community-tasks'
 tags = ['msbuild', 'build']
 categories = ['Examples']
 author = 'Paul Welter'
+aliases = ['/Sample-build-file-using-MSBuild-Community-Tasks']
 description = 'Sample build project demonstrating the use of MSBuild Community Tasks for creating releases.'
 +++
 

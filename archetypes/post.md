@@ -1,7 +1,7 @@
 +++
 date = '{{ .Date }}'
 title = '{{ replace .File.ContentBaseName "-" " " | title }}'
-url = '{{ .File.ContentBaseName }}'
+slug = '{{ .File.ContentBaseName }}'
 tags = []
 categories = []
 author = '{{ site.Params.author }}'

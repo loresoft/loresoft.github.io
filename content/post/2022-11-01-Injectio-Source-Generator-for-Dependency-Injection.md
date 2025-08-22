@@ -1,11 +1,12 @@
 +++
 title = 'Injectio - Source Generator for Dependency Injection'
-url = 'Injectio-Source-Generator-for-Dependency-Injection'
+slug = 'injectio-source-generator-for-dependency-injection'
 date = '2022-11-01T12:00:00-05:00'
 categories = ['Development', 'Tools']
 tags = ['dependency-injection', 'source-generator', 'csharp', 'dotnet']
 description = "Automatically discover and register services in .NET dependency injection containers using source generation. Supports singleton, scoped, transient lifetimes, factory methods, open generics, and custom registration strategies with compile-time safety."
 author = 'Paul Welter'
+aliases = ['/Injectio-Source-Generator-for-Dependency-Injection']
 +++
 
 

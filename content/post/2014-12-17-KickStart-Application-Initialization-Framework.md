@@ -1,10 +1,11 @@
 +++
 date = '2014-12-17T12:00:00-06:00'
 title = 'KickStart - Application Initialization Framework'
-url = 'KickStart-Application-Initialization-Framework'
+slug = 'kickstart-application-initialization-framework'
 tags = ['kickstart', 'initialization', 'framework']
 categories = ['Libraries']
 author = 'Paul Welter'
+aliases = ['/KickStart-Application-Initialization-Framework']
 description = 'Pluggable application startup framework with IoC container integration (Autofac, Unity, SimpleInjector), automatic assembly scanning, and extensible modules for AutoMapper, MongoDB, logging, and custom startup tasks in .NET applications.'
 +++
 

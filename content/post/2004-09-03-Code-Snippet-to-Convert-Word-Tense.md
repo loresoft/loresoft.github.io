@@ -1,10 +1,11 @@
 +++
 date = '2004-09-03T13:18:00-05:00'
 title = 'Code Snippet to Convert Word Tense'
-url = 'Code-Snippet-to-Convert-Word-Tense'
+slug = 'code-snippet-to-convert-word-tense'
 tags = ['snippets']
 categories = ['Examples']
 author = 'Paul Welter'
+aliases = ['/Code-Snippet-to-Convert-Word-Tense']
 description = 'Code snippet to convert word tense using regular expressions.'
 +++
 

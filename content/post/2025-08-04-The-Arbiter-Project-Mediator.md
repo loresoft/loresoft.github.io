@@ -1,11 +1,12 @@
 +++
 title = "Exploring the Arbiter Project: A Modern Take on the Mediator Pattern in .NET"
 date = '2025-08-04T12:00:00-05:00'
-url = 'The-Arbiter-Project-Mediator'
+slug = 'the-arbiter-project-mediator'
 categories = ['Development', 'Architecture']
 tags = ['dotnet', 'csharp', 'mediator', 'cqrs', 'clean-architecture', 'arbiter', 'vertical-slice']
 author = 'Paul Welter'
 description = "Discover the Arbiter project - a modern implementation of the Mediator pattern for .NET applications embracing clean architecture and CQRS principles."
+aliases = ['/The-Arbiter-Project-Mediator']
 +++
 
 Discover the Arbiter project - a modern implementation of the Mediator pattern for .NET applications embracing clean architecture and CQRS principles.

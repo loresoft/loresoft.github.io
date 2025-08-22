@@ -1,10 +1,11 @@
 +++
 date = '2006-01-05T13:28:00-06:00'
 title = 'Draco.NET version 1.6.4.0 Released'
-url = 'Draco-NET-version-1-6-4-0-Released'
+slug = 'draco-net-version-1-6-4-0-released'
 tags = ['draco-net', 'release']
 categories = ['Projects']
 author = 'Paul Welter'
+aliases = ['/Draco-NET-version-1-6-4-0-Released']
 description = 'Release announcement for Draco.NET version 1.6.4.0 with Visual Studio 2005 and MSBuild support.'
 +++
 

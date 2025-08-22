@@ -1,10 +1,11 @@
 +++
 date = '2018-11-14T12:00:00-06:00'
 title = 'Entity Framework Core Generator - Generating a model from an existing database'
-url = 'Entity-Framework-Core-Generator'
+slug = 'entity-framework-core-generator'
 tags = ['entity-framework', 'entity-framework-core']
 categories = ['Tools']
 author = 'Paul Welter'
+aliases = ['/Entity-Framework-Core-Generator']
 description = 'Powerful .NET Core CLI tool for database-first development that generates Entity Framework Core models, DbContext, mappings, view models, validators, and AutoMapper profiles from existing databases with safe regeneration and customizable templates.'
 +++
 

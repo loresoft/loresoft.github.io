@@ -1,10 +1,11 @@
-+++
+﻿+++
 date = '2015-08-10T12:00:00-05:00'
 title = 'FluentRest - Lightweight fluent wrapper over HttpClient'
-url = 'FluentRest--Lightweight-fluent-wrapper-over-HttpClient'
+slug = 'fluentrest-lightweight-fluent-wrapper-over-httpclient'
 tags = ['fluent', 'httpclient', 'http', 'rest']
 categories = ['Libraries']
 author = 'Paul Welter'
+aliases = ['/FluentRest--Lightweight-fluent-wrapper-over-HttpClient']
 description = 'Fluent HTTP client wrapper with automatic JSON serialization, form building, fake response support for unit testing, and intuitive API for building REST requests in .NET applications.'
 +++
 

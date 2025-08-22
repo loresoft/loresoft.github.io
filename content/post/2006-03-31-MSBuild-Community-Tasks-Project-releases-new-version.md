@@ -1,10 +1,11 @@
 +++
 date = '2006-03-31T15:15:00-06:00'
 title = 'MSBuild Community Tasks Project releases new version'
-url = 'MSBuild-Community-Tasks-Project-releases-new-version'
+slug = 'msbuild-community-tasks-project-releases-new-version'
 tags = ['msbuild', 'release']
 categories = ['Projects']
 author = 'Paul Welter'
+aliases = ['/MSBuild-Community-Tasks-Project-releases-new-version']
 description = 'Release announcement for MSBuild Community Tasks Project version v1.1.0.145 with many new tasks.'
 +++
 

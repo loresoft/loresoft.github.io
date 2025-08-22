@@ -1,10 +1,11 @@
 +++
 date = '2014-07-23T12:00:00-05:00'
 title = 'NLog Fluent Library'
-url = 'NLog-Fluent-Library'
+slug = 'nlog-fluent-library'
 tags = ['nlog', 'fluent-api', 'logging']
 categories = ['Libraries']
 author = 'Paul Welter'
+aliases = ['/NLog-Fluent-Library']
 description = 'Fluent API extension for NLog with property support, exception handling, caller info integration, and static Log class for simplified logging in .NET applications.'
 +++
 

@@ -1,10 +1,11 @@
 +++
 date = '2003-10-20T00:40:00-05:00'
 title = 'The NetSpell project'
-url = 'The-NetSpell-project'
+slug = 'the-netspell-project'
 tags = ['netspell']
 categories = ['Projects']
 author = 'Paul Welter'
+aliases = ['/The-NetSpell-project']
 description = 'An overview of the NetSpell project, a spell checking engine written in C#.'
 +++
 

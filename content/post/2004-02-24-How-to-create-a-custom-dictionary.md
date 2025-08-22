@@ -1,10 +1,11 @@
 +++
 date = '2004-02-24T23:42:00-06:00'
 title = 'How to create a custom dictionary'
-url = 'How-to-create-a-custom-dictionary'
+slug = 'how-to-create-a-custom-dictionary'
 tags = ['dictionary']
 categories = ['Tutorials']
 author = 'Paul Welter'
+aliases = ['/How-to-create-a-custom-dictionary']
 description = 'Steps to create a custom dictionary for spell checking.'
 +++
 

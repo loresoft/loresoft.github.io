@@ -1,10 +1,11 @@
 +++
 date = '2004-08-06T18:20:00-05:00'
 title = 'Fix for the RichTextBox Undo Information Lost When Retrieving Text'
-url = 'Fix-for-the-RichTextBox-Undo-Information-Lost-When-Retrieving-Text'
+slug = 'fix-for-the-richtextbox-undo-information-lost-when-retrieving-text'
 tags = ['snippets']
 categories = ['Examples']
 author = 'Paul Welter'
+aliases = ['/Fix-for-the-RichTextBox-Undo-Information-Lost-When-Retrieving-Text']
 description = 'Workaround for RichTextBox undo information lost issue.'
 +++
 

@@ -1,10 +1,11 @@
 +++
 date = '2007-08-10T12:36:00-05:00'
 title = 'PLINQO - CodeSmith LINQ to SQL Templates'
-url = 'PLINQO-CodeSmith-LINQ-to-SQL-Templates'
+slug = 'plinqo-codesmith-linq-to-sql-templates'
 tags = ['codesmith', 'linq', 'templates']
 categories = ['Projects']
 author = 'Paul Welter'
+aliases = ['/PLINQO-CodeSmith-LINQ-to-SQL-Templates']
 description = 'PLINQO - Professional LINQ to Objects CodeSmith templates for LINQ to SQL development.'
 +++
 

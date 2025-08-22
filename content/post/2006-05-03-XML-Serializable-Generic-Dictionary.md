@@ -1,10 +1,11 @@
 +++
 date = '2006-05-03T12:13:00-05:00'
 title = 'XML Serializable Generic Dictionary'
-url = 'XML-Serializable-Generic-Dictionary'
+slug = 'xml-serializable-generic-dictionary'
 tags = ['snippets', 'xml', 'serialization']
 categories = ['Examples']
 author = 'Paul Welter'
+aliases = ['/XML-Serializable-Generic-Dictionary']
 description = 'XML serializable generic dictionary implementation using IXmlSerializable interface.'
 +++
 

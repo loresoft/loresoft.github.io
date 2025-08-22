@@ -1,10 +1,11 @@
 +++
 date = '2014-07-01T12:00:00-05:00'
 title = 'NLog MongoDB Library'
-url = 'NLog-MongoDB-Library'
+slug = 'nlog-mongodb-library'
 tags = ['nlog', 'mongodb', 'logging']
 categories = ['Libraries']
 author = 'Paul Welter'
+aliases = ['/NLog-MongoDB-Library']
 description = 'NLog target for MongoDB with structured JSON document logging, capped collection support, custom field mapping, exception serialization, and configurable document schemas for scalable log storage.'
 +++
 

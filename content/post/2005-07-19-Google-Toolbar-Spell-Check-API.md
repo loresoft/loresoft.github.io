@@ -1,10 +1,11 @@
 +++
 date = '2005-07-19T00:29:00-05:00'
 title = 'Google Toolbar Spell Check API'
-url = 'Google-Toolbar-Spell-Check-API'
+slug = 'google-toolbar-spell-check-api'
 tags = ['netspell', 'google', 'api']
 categories = ['Development']
 author = 'Paul Welter'
+aliases = ['/Google-Toolbar-Spell-Check-API']
 description = 'Reverse engineering the Google Toolbar spell check API for integration with NetSpell.'
 +++
 

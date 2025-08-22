@@ -1,11 +1,12 @@
-+++
+﻿+++
 title = "AspNetCore.SecurityKey - Security API Key Authentication Implementation for ASP.NET Core"
 date = '2025-08-01T12:00:00-05:00'
-url = 'AspNetCore.SecurityKey-Security-API-Key-Authentication'
+slug = 'aspnetcore-securitykey-security-api-key-authentication'
 categories = ['Development', 'Security']
 tags = ['asp-net-core', 'authentication', 'api-key', 'security']
 description = "A flexible and lightweight API key authentication library for ASP.NET Core applications that supports multiple authentication patterns and integrates seamlessly with ASP.NET Core's authentication and authorization infrastructure."
 author = 'Paul Welter'
+aliases = ['/AspNetCore.SecurityKey-Security-API-Key-Authentication']
 +++
 
 
