@@ -5,7 +5,7 @@ url = 'SvnBackup-Backup-Tool-For-Subversion-Repositories'
 tags = ['svn-tools', 'subversion', 'backup']
 categories = ['Tools']
 author = 'Paul Welter'
-description = 'Command line backup tool for Subversion repositories with hotcopy and folder management features.'
+description = 'Automated Subversion repository backup tool using svnadmin hotcopy with revision management, backup pruning, compression support, and batch processing for multiple repositories.'
 +++
 
 #### Overview

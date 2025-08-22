@@ -5,7 +5,7 @@ url = 'KickStart-Application-Initialization-Framework'
 tags = ['kickstart', 'initialization', 'framework']
 categories = ['Libraries']
 author = 'Paul Welter'
-description = 'Application start-up helper framework for initializing IoC containers, mappings, and startup tasks.'
+description = 'Pluggable application startup framework with IoC container integration (Autofac, Unity, SimpleInjector), automatic assembly scanning, and extensible modules for AutoMapper, MongoDB, logging, and custom startup tasks in .NET applications.'
 +++
 
 

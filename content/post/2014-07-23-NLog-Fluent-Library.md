@@ -5,7 +5,7 @@ url = 'NLog-Fluent-Library'
 tags = ['nlog', 'fluent-api', 'logging']
 categories = ['Libraries']
 author = 'Paul Welter'
-description = 'NLog.Fluent library providing a fluent API for NLog logging framework.'
+description = 'Fluent API extension for NLog with property support, exception handling, caller info integration, and static Log class for simplified logging in .NET applications.'
 +++
 
 

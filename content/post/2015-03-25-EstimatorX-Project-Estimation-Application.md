@@ -5,7 +5,7 @@ url = 'EstimatorX-Project-Estimation-Application'
 tags = ['estimatorx', 'project-management', 'estimation']
 categories = ['Applications']
 author = 'Paul Welter'
-description = 'EstimatorX - A simple web-based project estimation application for managing project tasks and estimates.'
+description = 'Web-based project estimation application with structured task breakdown, complexity scaling, contingency planning, assumptions tracking, reusable templates, and collaborative organization features for accurate project planning.'
 +++
 
 ![EstimatorX](https://raw.githubusercontent.com/loresoft/Estimatorx/master/Code/Source/Estimatorx.Web/Content/EstimatorX-logo.png)

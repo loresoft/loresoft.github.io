@@ -5,7 +5,7 @@ url = 'Entity-Framework-Core-Generator'
 tags = ['entity-framework', 'entity-framework-core']
 categories = ['Tools']
 author = 'Paul Welter'
-description = '.NET Core CLI tool to generate Entity Framework Core model from an existing database.'
+description = 'Powerful .NET Core CLI tool for database-first development that generates Entity Framework Core models, DbContext, mappings, view models, validators, and AutoMapper profiles from existing databases with safe regeneration and customizable templates.'
 +++
 
 

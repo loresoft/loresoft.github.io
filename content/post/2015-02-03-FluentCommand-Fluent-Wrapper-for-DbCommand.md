@@ -5,7 +5,7 @@ url = 'FluentCommand-Fluent-Wrapper-for-DbCommand'
 tags = ['dbcommand', 'fluent-api', 'database']
 categories = ['Libraries']
 author = 'Paul Welter'
-description = 'FluentCommand library providing a fluent wrapper for DbCommand database operations.'
+description = 'Fluent database access library with automatic entity mapping, parameter callbacks, connection management, result caching, and support for multiple result sets and stored procedures in .NET applications.'
 +++
 
 

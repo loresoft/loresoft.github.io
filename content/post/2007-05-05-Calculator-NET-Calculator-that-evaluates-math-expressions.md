@@ -5,7 +5,7 @@ url = 'Calculator-NET-Calculator-that-evaluates-math-expressions'
 tags = ['calculator', 'math', 'dotnet']
 categories = ['Projects']
 author = 'Paul Welter'
-description = 'Calculator.NET project with MathExpressions library for evaluating mathematical expressions.'
+description = 'Advanced calculator application with MathExpressions library supporting mathematical expression evaluation, trigonometric functions, unit conversion across multiple measurement types, and variable support for .NET applications.'
 +++
 
 

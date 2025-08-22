@@ -4,7 +4,7 @@ title = 'Equatable.Generator - Source generator for Equals and GetHashCode'
 url = 'Equatable.Generator-Source-Generator-for-Equals-and-GetHashCode'
 categories = ['Development', 'Tools']
 tags = ['equals', 'gethashcode', 'source-generator', 'csharp', 'dotnet']
-description = "A source generator for Equals and GetHashCode that supports class, record, and struct types with various comparers."
+description = "Automatically generate optimized Equals and GetHashCode implementations for C# classes, records, and structs using source generation. Features customizable property comparers including string, sequence, dictionary, and reference equality with zero runtime dependencies."
 author = 'Paul Welter'
 +++
 

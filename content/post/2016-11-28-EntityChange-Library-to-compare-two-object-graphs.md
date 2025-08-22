@@ -5,7 +5,7 @@ url = 'EntityChange-Library-to-compare-two-object-graphs'
 tags = ['compare', 'change-detection', 'object-graph']
 categories = ['Libraries']
 author = 'Paul Welter'
-description = 'EntityChange library for comparing two entity object graphs and detecting changes in entities, collections, and dictionaries.'
+description = 'Deep object comparison library that analyzes complete entity graphs to detect changes in properties, collections, and dictionaries with customizable formatters and configurable comparison strategies for .NET applications.'
 +++
 
 

@@ -5,7 +5,7 @@ url = 'FluentRest--Lightweight-fluent-wrapper-over-HttpClient'
 tags = ['fluent', 'httpclient', 'http', 'rest']
 categories = ['Libraries']
 author = 'Paul Welter'
-description = 'FluentRest - Lightweight fluent wrapper over HttpClient for building REST API requests.'
+description = 'Fluent HTTP client wrapper with automatic JSON serialization, form building, fake response support for unit testing, and intuitive API for building REST requests in .NET applications.'
 +++
 
 ## Features

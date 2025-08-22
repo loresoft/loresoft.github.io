@@ -5,7 +5,7 @@ url = 'Generate-ASP-NET-Web-API'
 tags = ['entity-framework', 'asp-net-core', 'webapi']
 categories = ['Tutorials']
 author = 'Paul Welter'
-description = 'Tutorial on using Entity Framework Core Generator to create an EF Core data model for ASP.NET WebAPI.'
+description = 'Complete tutorial on building a database-first ASP.NET Core Web API using Entity Framework Core Generator to automatically generate entities, DbContext, mappings, view models, AutoMapper profiles, and validators from an existing database.'
 +++
 
 

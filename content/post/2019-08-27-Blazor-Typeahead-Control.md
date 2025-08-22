@@ -4,7 +4,7 @@ title = 'Blazor Typeahead Control'
 url = 'Blazor-Typeahead-Control'
 categories = ['Development']
 tags = ['blazor', 'typeahead', 'controls', 'csharp', 'dotnet']
-description = "A Blazor Typeahead control as part of the LoreSoft Blazor Controls project, providing user-friendly components for modern web applications."
+description = "Feature-rich Blazor typeahead/autocomplete control with search functionality, custom templates, debounce support, multiselect capability, and built-in form validation for enhanced user experience in Blazor applications."
 author = 'Paul Welter'
 +++
 

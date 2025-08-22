@@ -5,7 +5,7 @@ url = 'DataGenerator-Generate-Intelligent-and-Realistic-Test-Data'
 tags = ['test', 'data', 'generation', 'fake', 'sample']
 categories = ['Libraries']
 author = 'Paul Welter'
-description = 'DataGenerator library for generating intelligent and realistic test data based on property types and names.'
+description = 'Intelligent test data generation library with automatic property mapping, realistic data sources for names, addresses, companies, and credit cards, plus configurable profiles and fluent API for .NET testing scenarios.'
 +++
 
 

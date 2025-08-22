@@ -5,7 +5,7 @@ url = 'NLog-MongoDB-Library'
 tags = ['nlog', 'mongodb', 'logging']
 categories = ['Libraries']
 author = 'Paul Welter'
-description = 'NLog.Mongo library for writing NLog messages to MongoDB databases.'
+description = 'NLog target for MongoDB with structured JSON document logging, capped collection support, custom field mapping, exception serialization, and configurable document schemas for scalable log storage.'
 +++
 
 
