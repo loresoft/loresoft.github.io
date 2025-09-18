@@ -21,8 +21,9 @@ Source generator for `Equals` and `GetHashCode`
 * Implement `IEquatable<T>`
 * Support `class`, `record` and `struct` types
 * Support `EqualityComparer` per property
+* Attribute based control of equality implementation
 * Comparers supported: String, Sequence, Dictionary, HashSet, Reference, and Custom
-* No dependencies
+* No runtime dependencies. Library is compile time dependence only.
 
 ### Usage
 
