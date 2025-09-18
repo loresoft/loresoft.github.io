@@ -1,5 +1,5 @@
 +++
-date = '2025-09-18T12:00:00-05:00'
+date = '2025-09-17T12:00:00-05:00'
 title = 'Blazilla: Seamless FluentValidation Integration for Blazor Forms'
 slug = 'blazilla-fluentValidation-blazor'
 tags = ['blazor', 'fluentvalidation', 'aspnetcore', 'validation', 'forms', 'csharp', 'dotnet']
