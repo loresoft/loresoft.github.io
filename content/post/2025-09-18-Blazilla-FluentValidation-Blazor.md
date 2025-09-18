@@ -200,7 +200,7 @@ await builder.Build().RunAsync();
 
 ### 4. Use in Your Blazor Component
 
-```razor
+```html
 @page "/person-form"
 
 <h3>Person Form</h3>
@@ -275,7 +275,7 @@ public class PersonValidator : AbstractValidator<Person>
 
 When using async validation, you'll need to handle form submission differently:
 
-```razor
+```html
 <EditForm Model="@person" OnSubmit="@HandleSubmit">
     <FluentValidator AsyncMode="true" />
     <ValidationSummary />
@@ -352,7 +352,7 @@ public class PersonValidator : AbstractValidator<Person>
 
 Then use specific rule sets in your component:
 
-```razor
+```html
 <!-- Execute only the "Create" rule set -->
 <FluentValidator RuleSets="@(new[] { "Create" })" />
 
@@ -408,13 +408,13 @@ public class PersonValidator : AbstractValidator<Person>
 
 The `FluentValidator` component provides several parameters for customization:
 
-| Parameter | Type | Default | Description |
-|-----------|------|---------|-------------|
-| `Validator` | `IValidator?` | null | Custom validator instance to use instead of DI resolution |
-| `RuleSets` | `IEnumerable<string>?` | null | Specific rule sets to execute |
-| `AllRules` | `bool` | false | Execute all rules including those in rule sets |
-| `AsyncMode` | `bool` | false | Enable asynchronous validation mode |
-| `Selector` | `IValidatorSelector?` | null | Custom validator selector for advanced scenarios |
+| Parameter   | Type                   | Default | Description                                               |
+| ----------- | ---------------------- | ------- | --------------------------------------------------------- |
+| `Validator` | `IValidator?`          | null    | Custom validator instance to use instead of DI resolution |
+| `RuleSets`  | `IEnumerable<string>?` | null    | Specific rule sets to execute                             |
+| `AllRules`  | `bool`                 | false   | Execute all rules including those in rule sets            |
+| `AsyncMode` | `bool`                 | false   | Enable asynchronous validation mode                       |
+| `Selector`  | `IValidatorSelector?`  | null    | Custom validator selector for advanced scenarios          |
 
 ## Performance Considerations
 
