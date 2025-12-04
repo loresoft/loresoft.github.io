@@ -1,5 +1,5 @@
 +++
-date = '2025-12-04T12:00:00-05:00'
+date = '2025-12-03T12:00:00-05:00'
 title = 'Serilog.Sinks.SqlServer: High-Performance Serilog sink for Microsoft SQL Server'
 slug = 'serilog-sql-server'
 tags = ['serilog', 'logging', 'sqlserver', 'dotnet', 'csharp', 'aspnetcore', 'performance']
