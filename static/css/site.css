@@ -23,6 +23,16 @@ hr {
   opacity: 0.125;
 }
 
+/* Table Styles */
+table {
+  padding: 0.5rem;
+}
+
+table th,
+table td {
+  padding: 0.5rem;
+}
+
 /* Code Highlighting */
 .highlight {
   border: 3px solid #f0f0f0;
