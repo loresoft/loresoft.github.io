@@ -127,7 +127,7 @@ jobs:
     needs: deploy
     runs-on: ubuntu-latest
     steps:
-      - uses: bojieyang/indexnow-action@v2
+      - uses: bojieyang/indexnow-action@v3
         with:
           sitemap-location: ${{ needs.deploy.outputs.page_url }}/sitemap.xml
           key: ${{ secrets.INDEXNOW_KEY }}
